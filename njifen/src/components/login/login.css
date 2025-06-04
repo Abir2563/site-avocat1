@@ -1,0 +1,123 @@
+ .na{
+  width: 500px;
+  height: 500px;
+  background: rgba(41, 40, 40, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 10px; 
+  padding-bottom: 25px;
+  margin-left: 34vw;}
+
+.l{
+  color: #fff !important;  /* Add !important for temporary fix */
+  font-size: 25px;
+  font-family: "Open Sans";
+  font-weight: 520;
+  letter-spacing: 6px;
+  word-wrap: break-word;
+}
+
+.formGroup1{
+  color: #fff ;
+  width: 340px;
+  font-Size: 5px;
+  font-Family: "Open Sans";
+  font-Weight: 400;
+  letter-Spacing: 2;
+  word-Wrap: break-word;
+  margin-top: 10px;
+   
+}
+.loginButton{
+  color: rgba(15, 15, 15, 0.77);
+  font-Size: 17px;
+  font-Family: "Open Sans";
+  font-Weight: 700;
+  letter-Spacing: 2.5;
+  word-Wrap: break-word;
+  width: 350px;
+  height: 42px; 
+  background: #E6BC89;
+  margin-top: 30px;
+  
+}
+.loginButton:hover{
+  background-color: #ddac71;
+  border: #8a6e4c;
+  color: #58462f;
+}
+  
+  .rememberMe {
+    font-family:"Open Sans";
+    font-size: 15px;
+    color: #fff;
+    font-Family: "Open Sans";
+    font-Weight: 400;
+    letter-Spacing: 1.90;
+    word-Wrap: break-word;
+  }
+  
+  .forgotPassword {
+    text-decoration: none; /* Remove underline from link */
+    color: #fdfdfd;
+    font-family:"Open Sans";
+    font-size: 15px;
+    margin-left: 90px;
+    letter-Spacing: 1.90;
+  }
+  .formGroup2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .new{
+    color: #fdfdfd;
+    font-family:"Open Sans";
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 8px;
+    letter-Spacing: 1.70;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 13px;
+    color: #fdfdfd;
+    font-family:"Open Sans";
+  }
+  .main-content {
+    display: flex; 
+    flex-grow: 1; 
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../images/backk.png');
+    background-color: rgb(24, 24, 24);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+    flex-direction: row;
+  }
+
+.err_msg {
+    width: 370px;
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 14px;
+    background-color: #bb2424;
+    color: white;
+    border-radius: 5px;
+  text-align: center;
+}
+.submitMessage{
+  width: 370px;
+  padding: 15px;
+  margin: 5px 0;
+  font-size: 14px;
+  background-color: #5b2dff;
+  color: white;
+  border-radius: 5px;
+text-align: center;
+}

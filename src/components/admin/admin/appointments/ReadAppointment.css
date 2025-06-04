@@ -1,0 +1,98 @@
+/* Styles for the ReadAppointment component */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    justify-content: center; /* light background color for the whole page */
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.border {
+    border: 1px solid #dee2e6;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.px-5 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.pt-3 {
+    padding-top: 1rem;
+}
+
+.pb-5 {
+    padding-bottom: 3rem;
+}
+
+.rounded {
+    border-radius: .3rem;
+}
+
+.mb-2 {
+    margin-bottom: .5rem;
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+    color: #343a40;
+}
+
+strong {
+    display: block;
+    font-weight: 600;
+    color: #495057;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    transition: background-color .2s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.ms-3 {
+    margin-left: 1rem;
+}

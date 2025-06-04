@@ -1,0 +1,246 @@
+/* service.css */
+
+.afternavservice {
+    width: 99vw;
+    height: 75vh;
+    background-image: url('../../images/Rectangle 87.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .afternavservice::before {
+    content: ""; /* Empty content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); /* Black with 35% transparency */
+    z-index: 1;
+  }
+  .afternavtitleservice {
+    font-size: 6vh;
+    font-family: "Marcellus";
+    font-weight: 400;
+    word-wrap: break-word;
+    color: white;
+    margin-left: 42vw;
+    margin-top: 32vh;
+    z-index: 1;
+  }
+  .titleservicenav {
+    color: #E6BC89;
+    font-size: 3vh;
+    font-family: "Marcellus";
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-left: 47vw;
+    padding-top: 7.3vh;
+    z-index: 1;
+  }
+  .Contactez-Nous-button-service {
+    width: 150px;
+    height: 33.5px;
+    border: 2px solid #e6bc89;
+    border-radius: 1%;
+    color: #e6bc89;
+    background-color: transparent;
+    font-size: 2.3vh;
+    font-family: "Marcellus";
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left: 45vw;
+    margin-top: 4.5vh;
+    z-index: 1;
+  }
+  .Contactez-Nous-button-service:hover {
+    background-color: #73522b;
+    border-color: #715634;
+    color: #e6bc89;
+  } 
+  .line-leftservice {
+    height: 0.1vh;
+    width: 35vw;
+    background-color: #e6bc89;
+    margin-top: 10vh;
+    margin-right: 3vw;
+  }
+  .line-rightservice {
+    height: 0.1vh;
+    width: 35vw;
+    background-color: #e6bc89;
+    margin-top: 10vh;
+    margin-left: 3vw;
+  }
+  .titleservice {
+    color: #513a1e;
+    font-size: 5.7vh;
+    font-family: "Marcellus";
+    font-weight: 400;
+    letter-spacing: 0.60;
+    word-wrap: break-word;
+    margin-left: 0.5vw;
+    margin-top: 5.5vh;
+    
+  }
+  .innerWidth {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .r-container {
+    margin-top: 40px;
+  }
+  
+  .r-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .r-card img {
+    width: 100%;
+    max-width: 300px; /* Set a max width for the images */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 10px;
+  }
+  
+  .r-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .service-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    height: 12vh;
+    width: 55vw;
+    margin-left: 22vw;
+  }
+  
+  .service-button button {
+    font-size: 1em;
+    /*cursor: pointer;*/
+    background-color: transparent;
+    color: #513a1e;
+    border: 2px solid #513a1e; /* Ensure the border is visible */
+    border-radius: 5px;
+    /*padding: 10px 20px; /* Adjust padding for better visibility */
+  }
+  /*.service-button button:hover{
+    background-color:#513a1e;
+    color: #b4aba0;
+    border: 2px solid #513a1e;
+  }*/
+  .servicontent {
+    height: 330vh;
+  }
+  .line-leftintervention {
+    height: 0.1vh;
+    width: 27vw;
+    background-color: #e6bc89;
+    margin-top: 10vh;
+    margin-right: 3vw;
+  }
+  .line-rightintervention {
+    height: 0.1vh;
+    width: 27vw;
+    background-color: #e6bc89;
+    margin-top: 10vh;
+    margin-left: 3vw;
+  }
+  .titleintervention {
+    color: #513a1e;
+    font-size: 5.7vh;
+    font-family: "Marcellus";
+    font-weight: 400;
+    letter-spacing: 0.60;
+    word-wrap: break-word;
+    margin-left: 0.5vw;
+    margin-top: 5.5vh;
+  }
+  .thelinee{
+    margin-top: 5vh;
+  }
+  .par-inetrvention{color: 'black';
+    font-Size: 20px;
+    font-Family: 'Open Sans';
+    font-Weight: '400';
+    word-Wrap: 'break-word';
+    color: #333;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color:#58452d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-category {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Adjust this value to make it bigger */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .service-image {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .service-content {
+    flex: 1;
+  }
+  
+  .service-title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    
+  }
+  
+  .service-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.5vw;
+  }
+  
+  .service-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+  }
+  
+  .service-list li:last-child {
+    border-bottom: none;
+  }
+  .droit-public{
+    margin-top: 3vh;
+  }

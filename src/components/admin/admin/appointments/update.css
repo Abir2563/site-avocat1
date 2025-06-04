@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    height: 100vh;
+  }
+  
+  .moraba3 {
+    width: 50%;
+    border: 1px solid #ced4da;
+    background-color: rgb(255, 255, 255); /* Changed to beige */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 0.25rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+    display: flex; /* Added to display buttons in a row */
+    gap: 10px; /* Added to add space between buttons */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .btn-success {
+    background-color:  rgb(66, 46, 4);
+    color: #fff;
+  }
+  
+  .btn-danger {
+    background-color: rgb(66, 46, 4);
+    color: #fff;
+  }
+  
+  .btn-primary {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .button:hover,
+  .btn-success:hover,
+  .btn-danger:hover,
+  .btn-primary:hover {
+    opacity: 0.8;
+  }
+  

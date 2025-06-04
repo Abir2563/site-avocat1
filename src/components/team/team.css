@@ -1,0 +1,290 @@
+.afternav {
+    width: 99vw;
+    height: 75vh;
+    background-image: url('../../images/Rectangle 87.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Enable positioning for pseudo-element */
+  }
+  
+  .afternav::before {
+    content: ""; /* Empty content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); /* Black with 35% transparency */
+    z-index: 1; /* Place above the image (optional) */
+  }
+.afternavtitle{
+    font-Size: 6vh;
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: white;
+    margin-left: 40.6vw;
+    margin-top: 32vh;
+    z-index: 1;
+}
+.equipetitle{
+    color: #E6BC89;
+    font-Size: 3vh;
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    padding-left: 47vw;
+    padding-top: 7.3vh;
+    z-index: 1;
+}
+.Contactez-Nous-button{
+    width: 150px;
+    height: 33.5px;
+    border: 2px solid #e6bc89;
+    border-radius: 1%;
+    color: #e6bc89;
+    background-color: transparent;
+    font-size: 2.3vh;
+    font-family:"Marcellus" ;
+    font-Weight: 400;
+    word-Wrap: break-word;
+    margin-left: 44.6vw;
+    margin-top: 4.5vh;
+    z-index: 1;
+}  
+
+.teamcontent{
+    height: 170vh;
+}
+
+
+.theline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#teamTitle{
+    font-Size: 5vh;
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: #2c2929; 
+    margin-top: 5.7vh;  
+}
+.leftLine{
+   height:0.3vh;
+   width: 40vw;
+   background-color: #E6BC89;
+   margin-top: 9.5vh;
+   margin-right: 3vw;
+   
+}
+.rightLine{
+   height:0.3vh;
+   width: 37vw;
+   background-color: #E6BC89;
+   margin-top: 9.5vh;
+   margin-left: 3vw;
+}
+
+.teampic{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.avocatpic{
+    display: flex;
+    flex-direction: column;
+}
+.avocat1{
+    margin-top: 5vh;
+    margin-left: 21vw;
+    margin-right: 5vw;
+    height: 28vh;
+    width:17vw ;
+    margin-bottom: 2vw;
+}
+
+.firstname1{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color:black; 
+    font-size: 2.8vh;
+    margin-left: 20vh;
+    text-decoration: none;
+}
+.firstname14{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color:black; 
+    font-size: 2.8vh;
+    margin-left: 47vh;
+    text-decoration: none;
+}
+.paragaph-avocat{
+    font-size: 2vh;
+    font-family:"Marcellus" ;
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: #747373;
+    margin-left: 5vw;
+    line-height: 3vh;
+    letter-spacing: 1.50;
+    text-align: justify;
+}
+
+.firstname11{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color:black; 
+    font-size: 2.8vh;
+    margin-left: 21vw;
+    text-decoration: none;
+}
+.firstname12{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color:black; 
+    font-size: 2.8vh;
+    margin-left: 21vw;
+    text-decoration: none;
+}
+.firstname13{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color:black; 
+    font-size: 2.8vh;
+    margin-left: -22vw;
+    text-decoration: none;
+}
+
+.typeavocat1{
+    font-Family: "IM FELL Great Primer";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: #E6BC89;
+    font-size: 2.7vh;
+    margin-left: 27.5vw;
+    margin-top: 2.7vh;
+}
+.quoet1{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: #8B8B8B;
+    font-size: 2.7vh;
+    margin-right: 18vw;
+    margin-left: 21.5vw;
+    margin-top: 0.3vh;
+}
+.avocat2{
+    margin-right: 18vw;
+    margin-left: 5vw;
+    height: 28vh;
+    width:17vw ;
+    margin-top: 5vh;
+    margin-bottom: 2vw;
+}
+.firstname2{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color:black; 
+    font-size: 2.8vh;
+    margin-left: 5.5vw;
+    text-decoration: none;
+}
+
+
+.typeavocat2{
+    font-Family: "IM FELL Great Primer";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: #E6BC89;
+    font-size: 2.7vh;
+    margin-left: 11.5vw;
+    margin-top: 3vh;
+}
+.quoet2{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: #8B8B8B;
+    font-size: 2.7vh;
+    margin-left: 5vw;
+    margin-right: 6.5vw;
+    margin-top: 0.3vh;
+    text-align: justify;
+}
+.avocat3{
+    margin-right: 5vw;
+    margin-left: 20.5vw;
+    height: 28vh;
+    width:17vw ;
+    margin-top: 5vh;
+    margin-bottom: 2vw;
+}
+.firstname3{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color:black; 
+    font-size: 2.8vh;
+    margin-left: 24vw;
+    margin-top: 3.5vh;
+   
+}
+
+.typeavocat3{
+    font-Family: "IM FELL Great Primer";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: #E6BC89;
+    font-size: 2.7vh;
+    margin-left: 26.9vw;
+    margin-top: 0.3vh;
+}
+.avocat4{
+    margin-right: 18vw;
+    margin-left: 21vw;
+    height: 28vh;
+    width:17vw ;
+    margin-top: 5vh;
+    margin-bottom: 2vw;
+}
+.avocat5{
+    margin-right: 5vw;
+    margin-left: 42vw;
+    height: 28vh;
+    width:17vw ;
+    margin-top: 5vh;
+    margin-bottom: 2vw;
+}
+.firstname4{
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color:black; 
+    font-size: 2.8vh;
+    margin-left: 23.5vw;
+    margin-top: 3.5vh;
+}
+
+.typeavocat4{
+    font-Family: "IM FELL Great Primer";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    color: #E6BC89;
+    font-size: 2.7vh;
+    margin-left: 27.7vw;
+    margin-top: 0.3vh;
+}
