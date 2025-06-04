@@ -1,0 +1,23 @@
+image: alpine:latest
+
+stages:
+  - deploy
+
+deploy_to_ovh:
+  stage: deploy
+  before_script:
+    # Installe OpenSSH
+    - apk add --no-cache openssh
+
+    # Configure la clé SSH pour GitLab CI/CD
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -p $OVH_PORT $OVH_HOST >> ~/.ssh/known_hosts
+
+  script:
+    # Transfère les fichiers avec SCP
+    - scp -P $OVH_PORT -r * $OVH_USER@$OVH_HOST:$OVH_PATH
+
+  only:
+    - dev  # déploie uniquement depuis la branche `dev`

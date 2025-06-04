@@ -1,0 +1,255 @@
+.contactContainer{
+    display: flex;
+    direction: column;
+}
+.TopContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vh;
+
+}
+#ContactTitle{
+    margin-top: 2.6vh;
+    font-Size: 5vh;
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: "break-word" , sans-serif;
+    color: #76453B;
+}
+.line-leftLine{
+    height:0.3vh;
+    width: 41vw;
+    background-color: #2c2929;
+    margin-top: 6vh;
+    margin-right: 1vw;
+    margin-left: 0.2vw;
+}
+.line-rightLine{
+    height:0.3vh;
+    width: 38vw;
+    background-color: #2c2929;
+    margin-top: 6vh;
+    margin-left: 1vw;
+}
+.BotContainer{
+    display: flex;
+    flex-direction: row;
+    width:2000px;
+}
+#spann{
+    width: 100vw;
+    height: 130vh;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.contactForm{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: -1vh;
+    padding-left: -1vh;
+
+}
+.contactInfo{
+    width: 45vw;
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-top:-12vh;
+}
+
+.oneline{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+.mapImg{
+   
+    width: 48vw;
+    height: 57vh;
+    margin-top: 2vh;
+}
+.abovemap{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+.Icon{
+    height: 4vh;
+    margin-right: 1.5vw;
+    margin-top: 1.5vh;
+    width: 1.5vw;
+}
+.Iconphone{
+    height: 4vh;
+    margin-top: 2vh;
+    margin-right: 1.5vw;
+    width: 1.5vw;
+    margin-left: 1.5vw;
+    
+}
+.Iconadress{
+    height: 4vh;
+    margin-top: 0.3vh;
+    margin-right: 1.5vw;
+    margin-bottom: 2vh;
+    width: 1.5vw;
+}
+.Iconemail{
+    height: 3vh;
+    margin-top: 1.4vh;
+    margin-bottom: 2vh;
+    margin-right: 1.5vw;
+    width: 1.5vw;
+}
+.phonenumbers{
+    color: black;
+    font-family: "Open Sans";
+    word-wrap: break-word;
+    letter-spacing: 1.35px;
+    margin-top: 1.5vh;
+    font-size: 2vh;
+    margin-right: -4vw; 
+    
+}
+.phonenumbers1{
+    color: black;
+    font-family: "Open Sans";
+    word-wrap: break-word;
+    letter-spacing: 1.35px;
+    margin-top: 1.5vh;
+    font-size: 2vh;
+    margin-right: 3vw; 
+}
+.linkinfo{
+    color: black;
+    font-Family: "Open Sans";
+    line-Height: 40px;
+    letter-Spacing: 1.35;
+    word-wrap: break-word;
+    font-weight:normal;
+    margin-top: 1.5vh;
+    text-decoration: none;
+   
+}
+.prenom{
+    width: 10vw;
+}
+
+.stylefont{
+    color: black;
+    font-Size: 3vh;
+    font-Family: "Marcellus";
+    font-Weight: 400;
+    word-Wrap: break-word;
+    margin-bottom: 1vh;
+}
+.stylefield{
+    background: rgba(255, 255, 255, 0.8);
+    border-Radius: 15px;
+    opacity: 0.50;
+    color: #000000;
+    font-Size: 2vh;
+    font-Family: "IM FELL Great Primer";
+    width: 30vw;
+    margin-bottom: 3vh;
+    height: 4vh
+}
+.stylefield1{
+    background: rgba(255, 255, 255, 0.8);
+    border-Radius: 15px;
+    opacity: 0.50;
+    color: #808080;
+    font-Size: 2vh;
+    font-Family: "IM FELL Great Primer";
+    width: 30vw;
+    height: 15vh
+}
+.Contactez-Nous-form{
+    background-color: transparent;
+    border-Radius: 20px;
+    width: 400px;
+    height: 35px;
+    border-color:#161616 ; 
+    color: #252523;
+    font-Size: 25px;
+    font-Family: "Marcellus";
+    margin-top: 5vh;
+    font-Weight: 400;
+    word-Wrap: break-word;
+}
+.Contactez-Nous-form:hover{
+    background: #E6BC89;
+    border-color:#e4b173 ;
+    color: #252523;
+}
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.status-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,50 @@
+.product-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Couleur de fond plus claire */
+    padding: 20px; /* Ajout de padding */
+    min-height: 100vh; /* Assurez-vous que le conteneur occupe la hauteur complète */
+}
+.liste-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alignement vers le haut */
+    width: 100%; /* Prend toute la largeur */
+    height: auto; /* Autorise la hauteur variable */
+    min-height: 100vh; /* Assure une hauteur minimale */
+    background-color: #f8f9fa; /* Arrière-plan gris clair */
+    padding: 20px; /* Plus d'espace intérieur */
+   
+  }
+.liste-container h1{
+    color: #000000;
+  }
+.product-table-container {
+    width: 100%; /* Augmentez la largeur du conteneur */
+    background-color: #fff;
+    border: 1px solid #dee2e6; /* Bordure subtile */
+    border-radius: 8px; /* Bordures arrondies */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    padding: 20px;
+}
+
+.product-table {
+    width: 100%; /* Assurez-vous que le tableau occupe toute la largeur */
+    font-size: 14px; /* Adjust the font size */
+}
+
+.product-table th,
+.product-table td {
+    font-size: 12px; /* Adjust the font size for table headers and data cells */
+    line-height: 1.5; /* Adjust the line height */
+}
+
+.product-image {
+    width: 150px; /* Augmenter la largeur de l'image */
+    height: auto;
+    object-fit: contain; /* Pour que l'image garde ses proportions */
+}

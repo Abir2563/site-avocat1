@@ -1,0 +1,94 @@
+/* chat.css */
+
+/* Container for the chat interface */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  height: 100vh;
+  width: 50vw;
+  padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding:5vw;
+    justify-content: right;
+    align-items: right;
+    margin-left: 61vw;
+    margin-top: 25vh;
+}
+
+/* Chat history area */
+.chat-history {
+  overflow-y: auto;
+  max-height: 60vh;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Each individual message in the chat history */
+.chat-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Styling for user messages */
+.user-message {
+  background-color: #e6f2ff;
+  color: #333;
+  align-self: flex-end;
+}
+
+/* Styling for bot messages */
+.bot-message {
+  background-color: #7a7a7aac;
+  color: #333;
+  align-self: flex-start;
+  width: 28vw;
+}
+.NAME-CHATBOT{
+  margin-left: 9VW;
+  font-family: "open sans";
+  font-size:4vh;
+  color: #6b4d31;
+}
+.cadre{
+  height: 20vh;
+  width: 29.3vw;
+  background-color: #b2a89e;
+  border-radius: 1vh;
+}
+
+/* Input area for typing messages */
+.chat-input {
+  width: 20vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.tt{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+/* Button for sending messages */
+.send-button {
+  background-color: #6b4d31;
+  color: #fff;
+  border: none;
+  height: 5vh;
+  width: 7vw;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Button hover effect */
+.send-button:hover {
+  background-color: #aca373;
+}

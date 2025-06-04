@@ -1,0 +1,6 @@
+
+.error_msg {
+    color: #ffffff; /* Adjust error message color */
+    font-size: 14px;
+    margin-top: 10px; /* Add margin to separate from other elements */
+  }
