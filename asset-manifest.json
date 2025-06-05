@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/site-avocat1/static/css/main.3983747b.css",
-    "main.js": "/site-avocat1/static/js/main.05f19814.js",
+    "main.js": "/site-avocat1/static/js/main.f96041c4.js",
     "static/media/j.jpg": "/site-avocat1/static/media/j.3e0b78c150da474fe521.jpg",
     "static/media/image.png": "/site-avocat1/static/media/image.a6b29f80d88c282801d0.png",
     "static/media/p.jpg": "/site-avocat1/static/media/p.b3d776a3677eea3ecc8f.jpg",
@@ -38,10 +38,10 @@
     "static/media/Surveillance.jpg": "/site-avocat1/static/media/Surveillance.1a3be773f21d084d85dc.jpg",
     "index.html": "/site-avocat1/index.html",
     "main.3983747b.css.map": "/site-avocat1/static/css/main.3983747b.css.map",
-    "main.05f19814.js.map": "/site-avocat1/static/js/main.05f19814.js.map"
+    "main.f96041c4.js.map": "/site-avocat1/static/js/main.f96041c4.js.map"
   },
   "entrypoints": [
     "static/css/main.3983747b.css",
-    "static/js/main.05f19814.js"
+    "static/js/main.f96041c4.js"
   ]
 }
