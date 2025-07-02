@@ -1,0 +1,21 @@
+.chat-suggestions {
+    display: flex;
+    flex-direction: column; /* Aligner les boutons verticalement */
+    gap: 5px; /* Espace entre les boutons */
+    
+  }
+  
+  .chat-suggestions button {
+    background-color: #696969a2; /* Couleur verte pour les boutons */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left; /* Aligner le texte Ã  gauche */
+  }
+  
+  .chat-suggestions button:hover {
+    background-color: #e1a9549c; /* Couleur lÃ©gÃ¨rement plus foncÃ©e au survol */
+  }
+  

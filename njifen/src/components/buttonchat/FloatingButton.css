@@ -1,0 +1,19 @@
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(180deg, #0F1012 25%, #605942 100%, #BDAC78 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .floating-button:hover {
+    background: linear-gradient(180deg, #64603d 10%, #493a29 100%, #5c502d 100%); 
+  }
