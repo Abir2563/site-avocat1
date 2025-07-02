@@ -35,7 +35,11 @@ const AppointmentForm = () => {
         ...formData,
         [name]: value,
         appointmentCategory: "",
+<<<<<<< HEAD
         //aboutAppointment: "", // Set appointmentCategory to empty string
+=======
+        aboutAppointment: "", // Set appointmentCategory to empty string
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       });
     } else {
       setFormData({
@@ -86,7 +90,11 @@ const AppointmentForm = () => {
 
       // Send appointment data along with token in the request
       const response = await axios.post(
+<<<<<<< HEAD
         "https://avocat-backend.onrender.com/api/appointment/add",
+=======
+        "http://localhost:8080/api/appointment/add",
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         formData,
         config
       );
@@ -101,10 +109,15 @@ const AppointmentForm = () => {
     } catch (error) {
       if (error.response && error.response.data) {
         // If the server returns an error response
+<<<<<<< HEAD
         console.log("Erreur backend:", error.response.data); // 👈 ici
         setErrors(error.response.data);
       } else {
         console.error("Erreur soumission:", error);
+=======
+        setErrors(error.response.data);
+      } else {
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         // If the error is due to missing form data
         setSubmitMessage(error.message);
       }
@@ -115,16 +128,28 @@ const AppointmentForm = () => {
     <div>
       <Navbar />
       <div className="ko">
+<<<<<<< HEAD
         <b>Réserver un rendez-vous</b>
       </div>
       <p className="m7">
         Remplissez le formulaire afin de prendre rendez-vous avec le cabinet d'avocats NJIFEN
+=======
+        <b>scheduale an appointment</b>
+      </div>
+      <p className="m7">
+        fill in the form in ordre to scheduale an appointment with NJIFEN
+        lawfirm
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       </p>
       {submitMessage && <div className="fofo">{submitMessage}</div>}
       <form onSubmit={handleSubmit} className="form-container">
         <div className="form-line">
           <div>
+<<<<<<< HEAD
             <label>Nom & Prénom:</label>
+=======
+            <label>Full Name:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <input
               type="text"
               name="fullName"
@@ -146,7 +171,11 @@ const AppointmentForm = () => {
             {errors.email && <span>{errors.email}</span>}
           </div>
           <div>
+<<<<<<< HEAD
             <label>Numéro de télèphone:</label>
+=======
+            <label>Contact Number:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <input
               type="text"
               name="contactNumber"
@@ -159,31 +188,52 @@ const AppointmentForm = () => {
         </div>
         <div className="form-line">
           <div>
+<<<<<<< HEAD
             <label>Service Offer:</label>
             <p>Vous souhaitez bénéficier d'un service que nous proposons?</p>
+=======
+            <label>Service Offered:</label>
+            <p>would you like a service we offer?</p>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <select
               name="serviceOffered"
               value={formData.serviceOffered}
               onChange={handleChange}
             >
               {" "}
+<<<<<<< HEAD
               <option value="">Choisir</option>
               <option value="yes">Oui</option>
               <option value="no">Non</option>
+=======
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             </select>
             {errors.serviceOffered && <span>{errors.serviceOffered}</span>}
           </div>
           <div>
             <label>Documents:</label>
+<<<<<<< HEAD
             <p>Avez-vous besoin de documents pour préparer votre rendez-vous ?</p>
+=======
+            <p>do you need documents prep in your appointment</p>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <select
               name="documents"
               value={formData.documents}
               onChange={handleChange}
             >
+<<<<<<< HEAD
               <option value="">Choisir</option>
               <option value="yes">Oui</option>
               <option value="no">Non</option>
+=======
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             </select>
             {errors.documents && <span>{errors.documents}</span>}
           </div>
@@ -191,12 +241,17 @@ const AppointmentForm = () => {
         <div className="form-line">
           {formData.serviceOffered === "yes" && (
             <div>
+<<<<<<< HEAD
               <label>Choisir Type de Service:</label>
+=======
+              <label>Chosen Service:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <select
                 name="chosenService"
                 value={formData.chosenService}
                 onChange={handleChange}
               >
+<<<<<<< HEAD
                 <option value="">Choisir</option>
                 <option value="Conseils Juridiques">
                   Conseils Juridiques
@@ -212,6 +267,23 @@ const AppointmentForm = () => {
                 {/*<option value="Administrative Litigation">
                   Administrative Litigation
                 </option>*/}
+=======
+                <option value="">Select</option>
+                <option value="Investor Support and Advice">
+                  Investor Support and Advice
+                </option>
+                <option value="Execution Litigation">
+                  Execution Litigation
+                </option>
+                <option value="Debt Collection">Debt Collection</option>
+                <option value="Immigration Procedure Support">
+                  Immigration Procedure Support
+                </option>
+                <option value="Tax Litigation">Tax Litigation</option>
+                <option value="Administrative Litigation">
+                  Administrative Litigation
+                </option>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               </select>
               {errors.chosenService && <span>{errors.chosenService}</span>}
             </div>
@@ -220,18 +292,31 @@ const AppointmentForm = () => {
         <div className="form-line">
           {formData.serviceOffered === "no" && (
             <div>
+<<<<<<< HEAD
               <label>Type de rendez-vous:</label>
               <p>Choisissez la catégorie de rendez-vous la plus proche de votre situation</p>
+=======
+              <label>Appointment Category:</label>
+              <p>Choose the closest category of law to your situation</p>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <select
                 name="appointmentCategory"
                 value={formData.appointmentCategory}
                 onChange={handleChange}
               >
+<<<<<<< HEAD
                 <option value="">Choisir</option>
                 <option value="Droit des affaires">Droit des affaires</option>
                 <option value="Droit privé général">Droit privé général</option>
                 <option value="Droit public">Droit public</option>
                 {/*<option value="General Commercial Law">
+=======
+                <option value="">Select</option>
+                <option value="Business Law">Business Law</option>
+                <option value="General Private Law">General Private Law</option>
+                <option value="Public Law">Public Law</option>
+                <option value="General Commercial Law">
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
                   General Commercial Law
                 </option>
                 <option value="Company Law">Company Law</option>
@@ -255,7 +340,11 @@ const AppointmentForm = () => {
                 </option>
                 <option value="Family and Personal Law">
                   Family and Personal Law
+<<<<<<< HEAD
                 </option>*/}
+=======
+                </option>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               </select>
               {errors.appointmentCategory && (
                 <span>{errors.appointmentCategory}</span>
@@ -264,9 +353,16 @@ const AppointmentForm = () => {
           )}
           {formData.serviceOffered === "no" && (
             <div>
+<<<<<<< HEAD
               <label>Plus de détails:</label>
               <p>
                 Décrivez brièvement votre situation pour aider à diagnostiquer plus rapidement votre cas:
+=======
+              <label>About Appointment:</label>
+              <p>
+                Describe your situation briefly to help diagnose your case
+                faster
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               </p>
               <textarea
                 name="aboutAppointment"
@@ -281,18 +377,30 @@ const AppointmentForm = () => {
         </div>
         <div className="form-line">
           <div>
+<<<<<<< HEAD
             <label> Date Rendez-vous:</label>
+=======
+            <label>Appointment Date:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <DatePicker
               selected={formData.appointmentDetails.date}
               onChange={handleDateChange}
               dateFormat="yyyy-MM-dd"
+<<<<<<< HEAD
               placeholderText="Choisir Date"
+=======
+              placeholderText="Select Date"
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               className="date-picker"
             />
             {errors.appointmentDate && <span>{errors.appointmentDate}</span>}
           </div>
           <div>
+<<<<<<< HEAD
             <label>Heure:</label>
+=======
+            <label>Time:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <input
               type="string"
               name="time"
@@ -313,8 +421,13 @@ const AppointmentForm = () => {
 
         <div>
           <div className="form-line">
+<<<<<<< HEAD
             <label><p>Quel est le meilleur moment pour vous joindre ?</p></label>
             
+=======
+            <label>Time To Reach:</label>
+            <p>What's the best time to reach you?</p>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <select
               name="timeToReach"
               value={formData.appointmentDetails.timeToReach}
@@ -328,18 +441,31 @@ const AppointmentForm = () => {
                 })
               }
             >
+<<<<<<< HEAD
               <option value="">Choisir</option>
+=======
+              <option value="">Select</option>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <option value="8 AM - 12 PM">8 AM - 12 PM</option>
               <option value="12 PM - 3 PM">12 PM - 3 PM</option>
               <option value="3 PM - 6 PM">3 PM - 6 PM</option>
             </select>
             {errors.timeToReach && <span>{errors.timeToReach}</span>}
+<<<<<<< HEAD
               
             <div>
               <br/>
               <label>Consultation:</label>
               <p>
                 Nous proposons 3 types de consultations. Choisissez celle qui correspond le mieux à vos besoins.
+=======
+
+            <div>
+              <label>Consultation:</label>
+              <p>
+                We offer 3 types of consultations. Choose what best fits your
+                needs.
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               </p>
               <select
                 name="consultation"
@@ -347,17 +473,28 @@ const AppointmentForm = () => {
                 placeholderText="choose"
                 onChange={handleChange}
               >
+<<<<<<< HEAD
                 <option value="">Choisir</option>
                 <option value="in-person">Consultation Physique</option>
                 <option value="phone">Consultation Téléphonique </option>
                 <option value="online">Consultation En Ligne</option>
+=======
+                <option value="">Select</option>
+                <option value="phone">Phone</option>
+                <option value="in-person">In-person</option>
+                <option value="online">Online</option>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               </select>
               {errors.consultation && <span>{errors.consultation}</span>}
             </div>
           </div>
         </div>
         <button type="submit" className="felsa">
+<<<<<<< HEAD
           Réserver
+=======
+          Schedule
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         </button>
       </form>
     </div>

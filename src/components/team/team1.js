@@ -1,5 +1,8 @@
 import Navbar from "../navbar/navbar";
+<<<<<<< HEAD
 import Navbar1 from "../navbar1/navbar1";
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 import React from "react";
 import "./team1.css";
 import AvocatIcon from "../../images/picav.png";
@@ -12,6 +15,7 @@ import n from "../../images/n.jpg";
 
 function Team1() {
   return (
+<<<<<<< HEAD
     <div className="contenubase">
       <div>
         {/* Choisir la bonne navbar selon le rôle */}
@@ -20,12 +24,22 @@ function Team1() {
       <div className="afternav11" id="image">
         <h1 className="afternavtitle11" id="njifen">NJIFEN MOUNGUETYI Thierry </h1>
         <p className="equipetitle11" id="equipenjifen">Equipe/ NJIFEN MOUNGUETYI Thierry</p>
+=======
+    <div>
+      <div>
+        <Navbar />
+      </div>
+      <div className="afternav11">
+        <h1 className="afternavtitle11">NJIFEN MOUNGUETYI Thierry </h1>
+        <p className="equipetitle11">Equipe/ NJIFEN MOUNGUETYI Thierry</p>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         {/*<button to="" className="Contactez-Nous-button11">
           Reserver{" "}
         </button>*/}
       </div>
       <div className="teamcontent11">
         <div className="firstteam">
+<<<<<<< HEAD
           <img src={n} alt="avocat" className="avocatt1" id="avocat1"/>
           <div className="avocatinfo">
             <p className="avocatpaul" id="avocatnjifen">NJIFEN MOUNGUETYI Thierry </p>
@@ -33,11 +47,24 @@ function Team1() {
             <p className="paragaph-avocat">
             Me Thierry NJIFEN MOUNGUETYI est un Avocat africain d’origine camerounaise. Après l’obtention d’un Master 1 en Droit option Droit public interne à l’Université de Douala (Cameroun), il obtient un Post Graduate Diploma of Legal Practice (PGDLP) à l’Institute of Legal Practice and Development (ILPD) au Rwanda ainsi qu’un Certificat d’Aptitude à la Profession d’Avocat de l’Ordre des Avocats du Barreau du Rwanda. 
             <span className="hidden-mobile"><br/>Il est membre de l’Ordre des Avocats du Barreau du Rwanda, de la East Africa Law Society ainsi que de l’Ordre des Avocats au Barreau du Cameroun et justifie d’une longue et solide expérience de dix (10) ans au Rwanda, au Cameroun et en France dans la pratique du droit dans les domaines variés tels que , le droit des affaires (droit des sociétés, droit commercial, droit de la concurrence,…), le droit et contentieux de la propriété intellectuelle, le droit du numérique et de la protection des données, le droit des investissements (conseil et accompagnement des investisseurs dans plusieurs pays),  le droit et contentieux des transports (aérien, maritime et terrestre), le droit et contentieux des assurances (procédures d’indemnisation toutes branches confondues), le droit et contentieux fiscal, le droit des personnes et de la famille, successions et libéralités, le droits des étrangers en France ainsi que dans plusieurs autres domaines du droit. 
+=======
+          <img src={n} alt="avocat" className="avocatt1" />
+          <div className="avocatinfo">
+            <p className="avocatpaul">NJIFEN MOUNGUETYI Thierry </p>
+            <p className="typeavct">Avocat</p>
+            <p className="paragaph-avocat">
+            Me Thierry NJIFEN MOUNGUETYI est un Avocat africain d’origine camerounaise. Après l’obtention d’un Master 1 en Droit option Droit public interne à l’Université de Douala (Cameroun), il obtient un Post Graduate Diploma of Legal Practice (PGDLP) à l’Institute of Legal Practice and Development (ILPD) au Rwanda ainsi qu’un Certificat d’Aptitude à la Profession d’Avocat de l’Ordre des Avocats du Barreau du Rwanda. 
+            <br/>Il est membre de l’Ordre des Avocats du Barreau du Rwanda, de la East Africa Law Society ainsi que de l’Ordre des Avocats au Barreau du Cameroun et justifie d’une longue et solide expérience de dix (10) ans au Rwanda, au Cameroun et en France dans la pratique du droit dans les domaines variés tels que , le droit des affaires (droit des sociétés, droit commercial, droit de la concurrence,…), le droit et contentieux de la propriété intellectuelle, le droit du numérique et de la protection des données, le droit des investissements (conseil et accompagnement des investisseurs dans plusieurs pays),  le droit et contentieux des transports (aérien, maritime et terrestre), le droit et contentieux des assurances (procédures d’indemnisation toutes branches confondues), le droit et contentieux fiscal, le droit des personnes et de la famille, successions et libéralités, le droits des étrangers en France ainsi que dans plusieurs autres domaines du droit. 
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <br/>Il est également apte à la rédaction des actes juridiques divers dans le domaine des concessions, des marchés publics et peut aussi accompagner les procédures initiées dans le cadre des modes alternatifs de règlement des différends (arbitrage, médiation, conciliation, transaction, négociation…) entre autres compétences. 
             <br/><br/>
             Il est par ailleurs membre de la Cameroon Bussiness Lawyer’s Association (CBLA-ACAA), de l’Union internationale des Avocats et assume les fonctions de vice-président au sein de l’association des juristes Droit au Droit et de membre du Conseil d’administration de l’association Cameroon O’Bosso et de la Chambre européenne de Commerce du Rwanda. Titulaire du Certificat de formation au droit Continental de l’Université Panthéon-Assas Paris 2, il peut valablement intervenir au Rwanda, au Cameroun, dans tous les autres pays de la CEMAC, en France.
 
+<<<<<<< HEAD
             </span></p>
+=======
+            </p>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             {/*<p className="paulinfo">
               Age: --- <br />
               Experience: --- <br />
@@ -48,7 +75,11 @@ function Team1() {
               <p className="paulnumber">+ 33 7 80 81 42 74</p>
             </div>*/}
             <div className="mail-paul">
+<<<<<<< HEAD
               <img src={mailpaul} alt="mail icon" className="pauliconmail" id="iconmail" />
+=======
+              <img src={mailpaul} alt="mail icon" className="pauliconmail" />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <p className="paulmail">njifenlawfirm@gmail.com</p>
             </div>
             {/*<div className="socialmedia-paul">

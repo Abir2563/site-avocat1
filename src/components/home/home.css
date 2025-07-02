@@ -305,9 +305,14 @@
   margin-top: 2vh;
 }
 .bodymission{
+<<<<<<< HEAD
   display: grid;
   flex-direction: row; 
   grid-template-columns: repeat(4, 1fr); /* 4 colonnes sur desktop */
+=======
+  display: flex;
+  flex-direction: row; 
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 }
 .missionpic1{
   height: 20vh;
@@ -700,6 +705,7 @@
 .recherchebodyy{
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   padding-top: 10vh;
   flex-wrap: wrap;
   gap: 10px;
@@ -710,6 +716,9 @@
 .recherchebodyy select {
   flex: 1; /* pour que les selects prennent chacun un espace équitable */
   min-width: 100px;
+=======
+  padding-top: 2.2vh;
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 }
 .rechbody{
   color: black;
@@ -717,8 +726,13 @@
   font-Family: "Marcellus";
   font-Weight: 400;
   word-Wrap: break-word;
+<<<<<<< HEAD
   margin-top: 12vh;
   margin-left: 20vw;
+=======
+  margin-top: 3vh;
+  margin-left: 10vw;
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
   margin-right: 5vw;
 }
 #select-count1{
@@ -739,10 +753,13 @@
   border-color: #ebe8e8;
   padding-left: 1vw;
 }
+<<<<<<< HEAD
 .profil {
   cursor: pointer;
 }
 
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 #select-count3{
   margin-left: 9vw;
   height: 6.5vh;
@@ -763,6 +780,7 @@
   width: 13vw;
   margin-left: 8.5vw;
 }
+<<<<<<< HEAD
 /*******Affichage Responsive***************/
 /* Cacher le bouton menu sur desktop */
 .nav-toggle {
@@ -1113,4 +1131,9 @@
     margin-left:5px;
   }
 }
+=======
+
+
+
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 

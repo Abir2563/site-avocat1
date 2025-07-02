@@ -37,11 +37,15 @@
     height: 35px;
     margin-right: 1vh;
     margin-bottom: -1.5vh;
+<<<<<<< HEAD
     margin-top: -1.5vh;
   }
 #pro{
   margin-top: 3vh;
 }
+=======
+  }
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
   
   
   .actionButton {
@@ -134,6 +138,7 @@
 a:hover{
   color: #E6BC89;
 }
+<<<<<<< HEAD
 /*******Affichage Responsive***************/
 /* Cacher le bouton menu sur desktop */
 /* 📱 Mobile : changer la taille ou l'effet */
@@ -165,5 +170,7 @@ a:hover{
     align-items: center;
   }
 }
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 
   

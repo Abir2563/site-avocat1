@@ -26,7 +26,11 @@ function Home() {
   useEffect(() => {
     const fetchProductCount = async () => {
       try {
+<<<<<<< HEAD
         const response = await axios.get('https://avocat-backend.onrender.com/api/appointments/');
+=======
+        const response = await axios.get('http://localhost:8080/api/appointments/');
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         setProductCount(response.data.count);
       } catch (err) {
         console.error('Erreur lors de la récupération du nombre de produits:', err);
@@ -40,7 +44,11 @@ function Home() {
   useEffect(() => {
     const fetchOrderCount = async () => {
       try {
+<<<<<<< HEAD
         const response = await axios.get('https://avocat-backend.onrender.com/auth/commandes/count');
+=======
+        const response = await axios.get('http://localhost:8000/auth/commandes/count');
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         setOrderCount(response.data.count);
       } catch (err) {
         console.error('Erreur lors de la récupération du nombre de commandes:', err);
@@ -54,7 +62,11 @@ function Home() {
   useEffect(() => {
     const fetchClientCount = async () => {
       try {
+<<<<<<< HEAD
         const response = await axios.get('https://avocat-backend.onrender.com/auth/client/count');
+=======
+        const response = await axios.get('http://localhost:8000/auth/client/count');
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         setClientCount(response.data.count); // Assurez-vous que la réponse renvoie "count"
       } catch (err) {
         console.error('Erreur lors de la récupération du nombre de clients:', err);

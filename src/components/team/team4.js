@@ -1,5 +1,8 @@
 import Navbar from "../navbar/navbar";
+<<<<<<< HEAD
 import Navbar1 from "../navbar1/navbar1";
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 import React from "react";
 import "./team4.css";
 import AvocatIcon from "../../images/picav.png";
@@ -13,6 +16,7 @@ import TextField from "@mui/material/TextField";
 
 function Team4() {
   return (
+<<<<<<< HEAD
     <div className="contenubase4">
       <div>
         {/* Choisir la bonne navbar selon le rôle */}
@@ -21,10 +25,20 @@ function Team4() {
       <div className="afternav11" id="image4">
         <h1 className="afternavtitle11" id="josephnoel">NGANKEU DEGOUE Joseph Noel</h1>
         <p className="equipetitle11" id="equipejoseph">Equipe/ NGANKEU DEGOUE Joseph Noel</p>
+=======
+    <div>
+      <div>
+        <Navbar />
+      </div>
+      <div className="afternav11">
+        <h1 className="afternavtitle11">NGANKEU DEGOUE Joseph Noel</h1>
+        <p className="equipetitle11">Equipe/ NGANKEU DEGOUE Joseph Noel</p>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 
       </div>
       <div className="teamcontent11">
         <div className="firstteam">
+<<<<<<< HEAD
           <img src={j} alt="avocat" className="avocatt1" id="avocat4" />
           <div className="avocatinfo">
             <p className="avocatpaul" id="avocatjoseph">NGANKEU DEGOUE Joseph Noel</p>
@@ -36,6 +50,19 @@ function Team4() {
 
             <div className="mail-paul">
               <img src={mailpaul} alt="mail icon" className="pauliconmail"  id="iconmail"/>
+=======
+          <img src={j} alt="avocat" className="avocatt1" />
+          <div className="avocatinfo">
+            <p className="avocatpaul">NGANKEU DEGOUE Joseph Noel</p>
+            <p className="typeavct">Juriste - Collaborateur d’Avocat et postulant à la profession d’Avocat</p>
+            <p className="paragaph-avocat">
+            Monsieur NGANKEU DEGOUE Joseph Noel est titulaire d’une Licence en Droit et d’un Master 1 en droit option droit privé fondamental de l’Université de Douala au Cameroun. 
+            <br/>Il justifie d’une solide expérience de 10 ans comme collaborateur d’Avocat et aspire aujourd’hui à intégrer la profession d’Avocat. Il est habile dans diverses matières de droit et travaille de nos jours au sein de la société d’Avocats NJIFEN & C.O LAW FIRM. Il justifie ainsi d'une expérience dans l'accueil et l'orientation des justiciables, l'entretien client, diverses diligences nécessaires à l'introduction des affaires dans diverses juridictions en matière civile, commerciale, sociale, administrative et pénale. 
+            <br/><br/>Il justifie également d'une compétence avérée dans le support à l'exécution effectivement des décisions de justice et dans l'assistance des justiciables devant les instances administratives et juridictionnelles au Cameroun.</p>
+
+            <div className="mail-paul">
+              <img src={mailpaul} alt="mail icon" className="pauliconmail" />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <p className="paulmail">ngankeujoseph@yahoo.fr</p>
             </div>
             {/*<div className="socialmedia-paul">

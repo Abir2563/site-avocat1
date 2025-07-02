@@ -27,13 +27,21 @@ const Footer = () => {
         </div>
         <div>
           <Link to="/home" className="qu1">
+<<<<<<< HEAD
             <img src={logo} alt="logo" className="logo3"  />
+=======
+            <img src={logo} alt="logo" class="logo3"  />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           </Link>
         </div>
       </div>
       <div className="footer-section2">
+<<<<<<< HEAD
         
         <div className="Map">
+=======
+        <div>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           {/*<img src={userIcon} alt="map" className="map" />*/}
             <MapWithCountries/>
         </div>
@@ -60,7 +68,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-section3">
+<<<<<<< HEAD
         <h1 className="besoin">Besoin d'aide juridique ?</h1>
+=======
+        <h1>Besoin d'aide juridique ?</h1>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         <button className="Contactez-Nous">
          <a className="Contactez-Nous" href="http://localhost:3000/contactus">Contactez-Nous</a>
         </button>

@@ -3,7 +3,10 @@ import "./contactus.css";
 import emailjs from 'emailjs-com';
 import axios from "axios"; // Import axios for making HTTP requests
 import MapImg from "../../images/map.png";
+<<<<<<< HEAD
 import Navbar1 from "../navbar1/navbar1";
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 import Navbar from "../navbar/navbar";
 import userIcon from "../../images/LinkedInlogo.png";
 import FcbkIcon from "../../images/Facebook F.png";
@@ -81,8 +84,12 @@ const ContactForm = () => {
   return (
     <div id="spann">
       <div>
+<<<<<<< HEAD
         {/* Choisir la bonne navbar selon le rôle */}
         {localStorage.getItem("role") === "client" ? <Navbar /> : <Navbar1 />}
+=======
+        <Navbar />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       </div>
       <div id="spann">
         <span>

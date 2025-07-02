@@ -29,7 +29,11 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       const url = "https://avocat-backend.onrender.com/api/auth/zidi";
+=======
+      const url = "http://localhost:8080/api/auth/zidi";
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       const { data: res } = await axios.post(url, data);
       navigate("/login");
       console.log(res.message);
@@ -45,6 +49,7 @@ const Signup = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="Base-content1">
       <Navbar />
       <div className="main-content">
@@ -54,6 +59,17 @@ const Signup = () => {
             <ThemeProvider theme={darkTheme}>
               <TextField
                 label="Nom"
+=======
+    <div>
+      <Navbar />
+      <div className="main-content">
+        <form onSubmit={handleSubmit} className="form1">
+          <div className="S">SIGN UP</div>
+          <div className="formGroup0">
+            <ThemeProvider theme={darkTheme}>
+              <TextField
+                label="First Name"
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
                 variant="standard"
                 fullWidth
                 name="firstName"
@@ -64,10 +80,17 @@ const Signup = () => {
               />
             </ThemeProvider>
           </div>
+<<<<<<< HEAD
           <div className="formGroup1">
             <ThemeProvider theme={darkTheme}>
               <TextField
                 label="Prénom"
+=======
+          <div className="formGroup0">
+            <ThemeProvider theme={darkTheme}>
+              <TextField
+                label="Last Name"
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
                 variant="standard"
                 fullWidth
                 name="lastName"
@@ -95,7 +118,11 @@ const Signup = () => {
           <div className="formGroup0">
             <ThemeProvider theme={darkTheme}>
               <TextField
+<<<<<<< HEAD
                 label="Mot de passe"
+=======
+                label="Password"
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
                 type="password"
                 variant="standard"
                 fullWidth
@@ -109,6 +136,7 @@ const Signup = () => {
           </div>
           {error && <div className="error_msg">{error}</div>}
           <button type="submit" className="signupButton">
+<<<<<<< HEAD
             Enregistrer
           </button>
           <div className="formGroup01">
@@ -116,6 +144,15 @@ const Signup = () => {
             <label className="rememberMee">Remember Me</label>*/}
             <Link to="/login" className="loginB">
               Vous avez un compte? Se connecter
+=======
+            SIGN UP
+          </button>
+          <div className="formGroup01">
+            <input type="checkbox" className="rememberMee" />
+            <label className="rememberMee">Remember Me</label>
+            <Link to="/login" className="loginB">
+              Already Have an Account? Login Now
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             </Link>
           </div>
         </form>

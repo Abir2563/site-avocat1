@@ -31,10 +31,17 @@ const AppointmentDetails = () => {
             Authorization: `Bearer ${token}`,
           },
         };
+<<<<<<< HEAD
         console.log("Calling appointment API with usrId:", usrId);
         const response = await axios.get(
           `https://avocat-backend.onrender.com/api/appointment/details/${usrId}`,
           config 
+=======
+
+        const response = await axios.get(
+          `http://localhost:8080/api/appointment/details/${usrId}`,
+          config
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         );
 
         if (!response.data) {
@@ -96,7 +103,11 @@ const AppointmentDetails = () => {
       };
 
       const response = await axios.delete(
+<<<<<<< HEAD
         `https://avocat-backend.onrender.com/api/appointment/user/${Id}`,
+=======
+        `http://localhost:8080/api/appointment/user/${Id}`,
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         config
       );
 
@@ -114,7 +125,11 @@ const AppointmentDetails = () => {
   return (
     <div className="appcontainer">
       <div className="headerContainer">
+<<<<<<< HEAD
         <h2>Mes Rendez-vous</h2>
+=======
+        <h2>Appointment Details</h2>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 
         <Link to="/reminder">
           <img src={not} alt="reminder" className="profil" />
@@ -132,18 +147,27 @@ const AppointmentDetails = () => {
           </div>
           <div>
             {" "}
+<<<<<<< HEAD
             <b>Heure:</b> {appointment.time}
+=======
+            <b>Time:</b> {appointment.time}
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           </div>
           <div>
             {" "}
             <b>Status:</b> {appointment.status}
           </div>
+<<<<<<< HEAD
           {/*{appointment.status === "En attente" && (
+=======
+          {appointment.status === "denied" && (
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <div className="alert alert-danger">
               <b>Message:</b>
               {appointment.statusMessage}
             </div>
           )}
+<<<<<<< HEAD
           {appointment.status === "Confirmé" && (
             <div className="alert alert-success">
               <b>Paiement:</b> 
@@ -152,17 +176,35 @@ const AppointmentDetails = () => {
           <div className="op">
             <Link to="/EditAppointment">
               <button className="Folssa">Modifier</button>
+=======
+          {appointment.status === "confirmed" && (
+            <div className="alert alert-success">
+              <b>Paiment:</b> unvalid
+            </div>
+          )}
+          <div className="op">
+            <Link to="/EditAppointment">
+              <button className="Folssa">Edit</button>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             </Link>
 
             <Link to="/profile">
               <button className="Folssa" onClick={handleDelete}>
+<<<<<<< HEAD
                 Annuler
+=======
+                Delete
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               </button>
             </Link>
           </div>
         </div>
       ) : (
+<<<<<<< HEAD
         <div>Aucun détail sur les rendez-vous n'est disponible</div>
+=======
+        <div>No appointment details available</div>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       )}
     </div>
   );

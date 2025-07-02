@@ -35,7 +35,11 @@ const EditAppointment = () => {
         };
 
         const response = await axios.get(
+<<<<<<< HEAD
           `https://avocat-backend.onrender.com/api/appointment/details/${usrId}`,
+=======
+          `http://localhost:8080/api/appointment/details/${usrId}`,
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           config
         );
 
@@ -65,7 +69,11 @@ const EditAppointment = () => {
         setAppointment({ date, time, status, statusMessage });
         setLoading(false);
 
+<<<<<<< HEAD
         localStorage.setItem("appointmentId", response.data.id);
+=======
+        localStorage.setItem("tId", response.data.id);
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       } catch (error) {
         console.error("Error fetching appointment details", error);
         setError("Error fetching appointment details");
@@ -95,7 +103,11 @@ const EditAppointment = () => {
       };
 
       await axios.put(
+<<<<<<< HEAD
         `https://avocat-backend.onrender.com/api/appointment/update/${appointmentId}`,
+=======
+        `http://localhost:8080/api/appointment/update/${appointmentId}`,
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         { date: newDate, time: newTime },
         config
       );
@@ -112,7 +124,11 @@ const EditAppointment = () => {
       <Navbar />
       <UserProfileView />
       <div className="appcontainer">
+<<<<<<< HEAD
         <h2>Modifier mon rendez-vous </h2>
+=======
+        <h2>Edit Appointment</h2>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 
         {loading ? (
           <p>Loading...</p>
@@ -125,7 +141,11 @@ const EditAppointment = () => {
               <input type="date" value={newDate} onChange={handleDateChange} />
             </div>
             <div>
+<<<<<<< HEAD
               <label>Heure:</label>
+=======
+              <label>Time:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <input
                 type="string"
                 value={newTime}
@@ -134,7 +154,11 @@ const EditAppointment = () => {
             </div>
             <div>
               <button className="editbutton" onClick={handleSave}>
+<<<<<<< HEAD
                 Enregistrer
+=======
+                Save Changes
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               </button>
             </div>
           </div>

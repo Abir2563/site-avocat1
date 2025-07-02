@@ -13,6 +13,7 @@ const AppAdmin = () => {
   // };
 
   return (
+<<<<<<< HEAD
     <div>
       <div>
         <Navadmin />
@@ -20,6 +21,13 @@ const AppAdmin = () => {
       <Home />
     
     </div>
+=======
+    <>
+      <Navadmin />
+      <Home />
+    
+    </>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
   );
 };
 

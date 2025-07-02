@@ -92,8 +92,13 @@
   padding-top: 10px;
 }
 .felsa {
+<<<<<<< HEAD
   width: 10vw;
   height: 10vh;
+=======
+  width: 200px;
+  height: 30px;
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
   border: 2px solid #693a16;
   color: #693a16;
   font-family: "Open Sans";

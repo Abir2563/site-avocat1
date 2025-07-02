@@ -233,6 +233,7 @@
     font-size: 2.7vh;
     margin-left: 27.7vw;
     margin-top: 0.3vh;
+<<<<<<< HEAD
 }
 /*******Affichage Responsive***************/
 @media (max-width: 768px) {
@@ -295,4 +296,6 @@
     width:99vw;
     height: 160vh;
   }
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 }

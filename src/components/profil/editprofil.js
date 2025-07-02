@@ -8,7 +8,11 @@ const EditProfile = () => {
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
+<<<<<<< HEAD
     email: "Email indisponible pour modification", // Replace with the user's actual email
+=======
+    email: "email inavailable for change", // Replace with the user's actual email
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
     password: "",
     newPassword: "",
     confirmPassword: "",
@@ -26,7 +30,11 @@ const EditProfile = () => {
   const updateName = async () => {
     try {
       await axios.put(
+<<<<<<< HEAD
         "https://avocat-backend.onrender.com/api/auth/update",
+=======
+        "http://localhost:8080/api/auth/update",
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         {
           firstName: userData.firstName,
           lastName: userData.lastName,
@@ -48,7 +56,11 @@ const EditProfile = () => {
     try {
       const { password, newPassword, confirmPassword } = userData;
       await axios.put(
+<<<<<<< HEAD
         "https://avocat-backend.onrender.com/api/auth/p",
+=======
+        "http://localhost:8080/api/auth/p",
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         {
           password,
           newPassword,
@@ -92,14 +104,22 @@ const EditProfile = () => {
       // Optionally, you can set errors to state for display
     } else {
       // If no errors, redirect to /profile
+<<<<<<< HEAD
       window.location.href = "/EspaceClient";
+=======
+      window.location.href = "/profile";
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
     }
   };
   return (
     <div>
       <Navbar />
       <div className="user-profile-container">
+<<<<<<< HEAD
         <h2 align="center">Mon Profil</h2>
+=======
+        <h2>User Profile</h2>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         {/* Display success message if exists */}
         {successMessage && (
           <div className="success-message">{successMessage}</div>
@@ -108,7 +128,11 @@ const EditProfile = () => {
         {errorMessage && <div className="error-message">{errorMessage}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
+<<<<<<< HEAD
             <label className="form-label">Nom:</label>
+=======
+            <label className="form-label">First Name:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <input
               className="form-input"
               type="text"
@@ -118,7 +142,11 @@ const EditProfile = () => {
             />
           </div>
           <div className="form-group">
+<<<<<<< HEAD
             <label className="form-label">Prénom:</label>
+=======
+            <label className="form-label">Last Name:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <input
               className="form-input"
               type="text"
@@ -138,8 +166,13 @@ const EditProfile = () => {
             />
           </div>
 
+<<<<<<< HEAD
           {/*<div className="form-group">
             <label className="form-label">Mot de passe:</label>
+=======
+          <div className="form-group">
+            <label className="form-label">Password:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <input
               className="form-input"
               type="password"
@@ -147,9 +180,15 @@ const EditProfile = () => {
               value={userData.password}
               onChange={handleChange}
             />
+<<<<<<< HEAD
           </div>*/}
           <div className="form-group">
             <label className="form-label">Nouveau mot de passe:</label>
+=======
+          </div>
+          <div className="form-group">
+            <label className="form-label">New Password:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <input
               className="form-input"
               type="password"
@@ -159,7 +198,11 @@ const EditProfile = () => {
             />
           </div>
           <div className="form-group">
+<<<<<<< HEAD
             <label className="form-label">Confirmer mot de passe:</label>
+=======
+            <label className="form-label">Confirm New Password:</label>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <input
               className="form-input"
               type="password"
@@ -169,11 +212,19 @@ const EditProfile = () => {
             />
           </div>
           <button type="submit" className="submit-button">
+<<<<<<< HEAD
             Enregistrer
           </button>
         </form>
       </div>
       {/*<AppointmentDetails />*/}
+=======
+            Save Changes
+          </button>
+        </form>
+      </div>
+      <AppointmentDetails />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
     </div>
   );
 };

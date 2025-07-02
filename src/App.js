@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from "react";
+<<<<<<< HEAD
 import PrivateRoute from "./components/PrivateRoute"; // adapte le chemin si besoin
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import TestAPI from "./TestAPI";
+=======
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 import Login from "./components/login/login";
 import Signup from "./components/signup/signup";
 import Footer from "./components/footer/footer";
 import Home from "./components/home/home";
 import Newsletter from "./components/newsletter/newsletter"; // la nouvelle page
+<<<<<<< HEAD
 //Début Route Client
 import Homeclient from "./components/EspaceClient/home";
 //Fin Route Client
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 import Team from "./components/team/team";
 import Team1 from "./components/team/team1";
 import Team2 from "./components/team/team2";
@@ -68,6 +75,7 @@ function App() {
     setIsModalOpen(false); // Close the modal
   };
   return (
+<<<<<<< HEAD
 
     <BrowserRouter>
       <div>
@@ -81,6 +89,11 @@ function App() {
             }
           />
 
+=======
+    <BrowserRouter>
+      <div>
+        <Routes>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/contactus" element={<ContactUs />} />
@@ -98,11 +111,15 @@ function App() {
           <Route path="/service" element={<Service />} />
           <Route path="/newsletter" element={<Newsletter />} />
           <Route path="/chat" element={<ChatInterface />} />
+<<<<<<< HEAD
          
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 
           {/* Protected Routes for Authenticated Users */}
           {userRole === "client" && (
             <>
+<<<<<<< HEAD
 
               <Route
                 path="/EspaceClient"
@@ -110,6 +127,8 @@ function App() {
                   isAuthenticated() ? <Homeclient/> : <Navigate to="/login" />
                 }
               />
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <Route
                 path="/reserver"
                 element={
@@ -145,6 +164,7 @@ function App() {
               <Route
                 path="/profile"
                 element={
+<<<<<<< HEAD
                   <PrivateRoute allowedRoles={["client", "admin"]}>
                     <Profile />
                   </PrivateRoute>
@@ -152,6 +172,11 @@ function App() {
               />
 
 
+=======
+                  isAuthenticated() ? <Profile /> : <Navigate to="/login" />
+                }
+              />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <Route
                 path="/reminder"
                 element={
@@ -168,8 +193,11 @@ function App() {
           {/* Admin Routes */}
           {userRole === "admin" && (
             <>
+<<<<<<< HEAD
               <Route path="/appadmin" element={isAuthenticated() ? (<AppAdmin />) : (
                     <Navigate to="/login" />)} />
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <Route path="/consultation" element={<ConsultationListe />} />
               <Route path="/appadmin" element={<AppAdmin />} />
               <Route path="/AppPoint" element={<AppPoint />} />
@@ -185,6 +213,7 @@ function App() {
             </>
           )}
         </Routes>
+<<<<<<< HEAD
          {/* ChatBot Message 
         <FloatingButton onClick={handleButtonClick} />
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
@@ -199,6 +228,17 @@ function App() {
       </div>*/}
     </BrowserRouter>
 
+=======
+        <FloatingButton onClick={handleButtonClick} />
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+          <ChatbotAvoca />
+                  
+        </Modal>
+        <Footer />
+      </div>
+
+    </BrowserRouter>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 
   );
 }

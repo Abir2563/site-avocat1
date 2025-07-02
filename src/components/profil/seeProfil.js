@@ -23,7 +23,11 @@ const UserProfileView = () => {
       };
 
       const response = await axios.get(
+<<<<<<< HEAD
         "https://avocat-backend.onrender.com/api/auth/",
+=======
+        "http://localhost:8080/api/auth/",
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         config
       );
       setUserData(response.data);
@@ -42,20 +46,34 @@ const UserProfileView = () => {
       <div className="lock">
         <div className="headerContainer">
           {/* Container for header elements */}
+<<<<<<< HEAD
           <h2>Profil</h2>
           {/* Link to edit profile page */}
           <Link to="/editprofile">
             <button className="Folssa">Modifier</button>
+=======
+          <h2>User Profile</h2>
+          {/* Link to edit profile page */}
+          <Link to="/editprofile">
+            <button className="Folssa">Edit</button>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           </Link>
         </div>
         <div className="userDataContainer">
           {userData.user && (
             <>
               <div>
+<<<<<<< HEAD
                 <strong>Nom:</strong> {userData.user.firstName}
               </div>
               <div>
                 <strong>Prénom:</strong> {userData.user.lastName}
+=======
+                <strong>First Name:</strong> {userData.user.firstName}
+              </div>
+              <div>
+                <strong>Last Name:</strong> {userData.user.lastName}
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               </div>
               <div>
                 <strong>Email:</strong> {userData.user.email}

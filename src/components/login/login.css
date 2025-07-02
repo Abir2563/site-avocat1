@@ -65,9 +65,14 @@
     color: #fdfdfd;
     font-family:"Open Sans";
     font-size: 15px;
+<<<<<<< HEAD
     margin-left: 20px;
     letter-Spacing: 1.90;
     
+=======
+    margin-left: 90px;
+    letter-Spacing: 1.90;
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
   }
   .formGroup2{
     display: flex;
@@ -121,6 +126,7 @@
   color: white;
   border-radius: 5px;
 text-align: center;
+<<<<<<< HEAD
 }
 
 /* 📱 Mobile : changer la taille de carreaux noir */
@@ -139,3 +145,6 @@ text-align: center;
     
   }
 }
+=======
+}
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119

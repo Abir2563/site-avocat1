@@ -1,5 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
 import Navbar1 from "../navbar1/navbar1";
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 import Navbar from "../navbar/navbar";
 import "./service.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,8 +32,12 @@ function Service() {
   return (
     <div>
       <div>
+<<<<<<< HEAD
         {/* Choisir la bonne navbar selon le rôle */}
         {localStorage.getItem("role") === "client" ? <Navbar /> : <Navbar1 />}
+=======
+        <Navbar />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       </div>
       <div className="servicontent">
         <div className="div-service">
@@ -57,9 +64,15 @@ function Service() {
             >
               {data.map((item, index) => (
                 <SwiperSlide key={index}>
+<<<<<<< HEAD
                   <div className="flexColStart r-card" id="card" >
                     <img src={item.img} alt={item.title} id="card" />
                     <h3 align="center" id="card-title">{item.title}</h3>
+=======
+                  <div className="flexColStart r-card">
+                    <img src={item.img} alt={item.title} />
+                    <h3 align="center">{item.title}</h3>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
                   </div>
                 </SwiperSlide>
               ))}

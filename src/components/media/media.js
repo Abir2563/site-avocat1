@@ -3,7 +3,10 @@ import "./media.css";
 // import { ThemeProvider, createTheme } from "@mui/material/styles";
 // import { useNavigate } from "react-router-dom";
 // import axios from "axios";
+<<<<<<< HEAD
 import Navbar1 from "../navbar1/navbar1";
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 import Navbar from "../navbar/navbar";
 import GuidIcon from "../../images/n.jpg";
 import FacilitIcon from "../../images/all.jpg";
@@ -13,8 +16,12 @@ import FacebookPagePlugin from './FacebookPagePlugin';
 function media() {
   return (
     <div>
+<<<<<<< HEAD
         {/* Choisir la bonne navbar selon le rôle */}
         {localStorage.getItem("role") === "client" ? <Navbar /> : <Navbar1 />}
+=======
+      <Navbar />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       <div className="App">
         <div className="tophome2">
           <div className="line-lefthome2"></div>

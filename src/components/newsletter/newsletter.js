@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import "./newsletter.css";
 import emailjs from '@emailjs/browser';
+<<<<<<< HEAD
 import Navbar1 from "../navbar1/navbar1";
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 import Navbar from "../navbar/navbar";
 import GuidIcon from "../../images/n.jpg";
 import FacilitIcon from "../../images/all.jpg";
@@ -47,8 +50,12 @@ function Newsletter() {
   return (
     <div>
    
+<<<<<<< HEAD
         {/* Choisir la bonne navbar selon le rôle */}
         {localStorage.getItem("role") === "client" ? <Navbar /> : <Navbar1 />}
+=======
+    <Navbar />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
       <div>
 <br/>
       </div>

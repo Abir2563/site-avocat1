@@ -243,6 +243,7 @@
   }
   .droit-public{
     margin-top: 3vh;
+<<<<<<< HEAD
   }
 /*******Affichage Responsive***************/
 @media (max-width: 768px) {  /****titre nos services, nos domaines d'intervention ******/
@@ -292,3 +293,6 @@
     height:600vw;
   }
 }
+=======
+  }
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119

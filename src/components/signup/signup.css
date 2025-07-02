@@ -53,6 +53,7 @@
       letter-Spacing: 1.90;
       text-decoration: none;
       text-transform: uppercase;
+<<<<<<< HEAD
       margin-left:-5vw ;
       margin-top: 0.2vh;
       transform: scale(0.6); /* Réduction visuelle */
@@ -69,6 +70,12 @@
       margin-top: 10px;
       
     }
+=======
+      margin-left:0.5vw ;
+      margin-top: 0.2vh;
+    }
+    
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
     .formGroup01{
       display: flex;
       flex-direction: row;
@@ -114,6 +121,7 @@
 	border-radius: 5px;
 	text-align: center;
 }
+<<<<<<< HEAD
 
 /* 📱 Mobile : changer la taille de carreaux noir */
 @media (max-width: 768px) {
@@ -146,3 +154,6 @@
     
   }
 }
+=======
+  
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119

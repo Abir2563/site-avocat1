@@ -253,6 +253,7 @@ button:disabled {
   text-align: center;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /*******Affichage Responsive***************/
 @media (max-width: 768px) {  /****Cacher la partie Map ******/
   .contactInfo {
@@ -277,3 +278,5 @@ button:disabled {
     height:120vh;
   }
 }
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119

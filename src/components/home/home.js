@@ -15,8 +15,11 @@ import AvocatIcon from "../../images/na.jpg";
 
 function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+<<<<<<< HEAD
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => setIsOpen(!isOpen);
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
 
   useEffect(() => {
     // Check if user is logged in
@@ -53,6 +56,7 @@ function Home() {
     }
   };
   return (
+<<<<<<< HEAD
     <div className="homepage ">
       <nav className="Navb ">
         <div className="navhome ">
@@ -63,6 +67,15 @@ function Home() {
             ☰
           </div>
           <ul className={`navigation ${isOpen ? 'show' : ''}`}>
+=======
+    <div className="homepage">
+      <nav className="Navb">
+        <div className="navhome">
+          <Link to="/home" className="log">
+             <img src={logo} alt="logo" class="logo"  />
+          </Link>
+          <ul className="navigation">
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <li>
               <Link to="/home" className="linknav">
                 <a className="linknav" href="/home">
@@ -83,6 +96,7 @@ function Home() {
               </Link>
             </li>
             <li>
+<<<<<<< HEAD
               <Link to="/media" className="linknav">
                 <a className="linknav" href="#">
                   Média
@@ -90,13 +104,25 @@ function Home() {
               </Link>
             </li>
             <li>
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
               <Link to="/contactus" className="linknav">
                 <a className="linknav" href="/contactus">
                   Contactez-Nous
                 </a>
               </Link>
             </li>
+<<<<<<< HEAD
 
+=======
+            <li>
+              <Link to="/media" className="linknav">
+                <a className="linknav" href="#">
+                  Média
+                </a>
+              </Link>
+            </li>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <li>
               <Link to="/newsletter" className="linknav">
                 <a className="linknav" href="#">
@@ -105,7 +131,11 @@ function Home() {
               </Link>
             </li>
           </ul>
+<<<<<<< HEAD
           <div>
+=======
+          <div>{/*
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             <Link
               to="/login"
               onMouseEnter={() => {
@@ -122,12 +152,17 @@ function Home() {
               onMouseEnter={() => {
                 document.querySelector(".actionButton").classList.add("hover");
               }}
+<<<<<<< HEAD
               onMouseLeave={() => {kk
+=======
+              onMouseLeave={() => {
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
                 document
                   .querySelector(".actionButton")
                   .classList.remove("hover");
               }}
             >
+<<<<<<< HEAD
              {/*<button className="actionButton">Calendrier</button>*/}
             </Link>
           </div>
@@ -135,21 +170,39 @@ function Home() {
         <div className="barcontent">
           <p className="firstp text-xl md:text-3xl">Bienvenue Chez NJIFEN & C.O</p>
           <h1 className="secondp text-xl md:text-3xl">
+=======
+             <button className="actionButton">Calendrier</button>
+            </Link>*/}
+          </div>
+        </div>
+        <div className="barcontent">
+          <p className="firstp">Bienvenue Chez NJIFEN & C.O</p>
+          <h1 className="secondp">
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           Nous sommes une force internationale
           
             <br />
             En défense et conseils juridiques
           </h1>
+<<<<<<< HEAD
           <p className="thirdp text-xl md:text-3xl">
+=======
+          <p className="thirdp">
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           "NJIFEN & C.O LAW FIRM est un cabinet d’avocats généralistes,
           
             <br /> le bon endroit pour répondre à vos besoins en matière de conseils."
           </p>
+<<<<<<< HEAD
           {/* <button className="barbutton">Read more</button> 
+=======
+          {/* <button className="barbutton">Read more</button> */}
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           
           <div className="liremoree">
             <p className="plus">More</p>
             <img src={FlechIcon} alt="flech" className="flech" />{" "}
+<<<<<<< HEAD
           </div>*/}
         </div>
       </nav>
@@ -161,17 +214,38 @@ function Home() {
             <div className="line-righthome1 w-10 h-1 bg-black ml-2"></div>
           </div>
           <p className="homepargraph ">
+=======
+          </div>
+        </div>
+      </nav>
+      <div className="bodyhome1">
+        <div className="aporpo">
+          <div className="tophome1">
+            <div className="line-lefthome1"></div>
+            <h1 className="titlehome1">À propos de nous</h1>
+            <div className="line-righthome1"></div>
+          </div>
+          <p className="homepargraph">
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
             "Njifen & Co est un cabinet d’avocats international qui offre
             des services de consultation et de suivi juridiques efficaces et professionnels
             pour tous vos besoins, qu’ils soient administratifs, judiciaires ou
             les tribunaux privés. Notre équipe expérimentée assure la promotion
             et la défense de vos droits et intérêts."
           </p>
+<<<<<<< HEAD
           <h1 className="namenjifen">Me Thierry Njifen</h1>
           <h2 className="signnjifen">"Avocat"</h2>
         </div>
         <div className="md:w-1/2 flex justify-center">
           <img src={AvocatIcon} alt="avocat" className="avocathome " />
+=======
+          <h1 className="namenjifen">Thierry Njifen</h1>
+          <h2 className="signnjifen">"Directeur Associé"</h2>
+        </div>
+        <div>
+          <img src={AvocatIcon} alt="avocat" className="avocathome" />
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         </div>
       </div>
       <div className="bodyhome2">
@@ -187,11 +261,16 @@ function Home() {
         </p>
       </div>
       <div className="bodyvison">
+<<<<<<< HEAD
         <h1 className="Pourquoi" id="taille">
+=======
+        <h1 className="Pourquoi">
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         Pourquoi Nous <br />
           Spécifiquement?
         </h1>
         <div className="questions">
+<<<<<<< HEAD
           <p className="quest1"><a className="quest" href="/team">Comment choisir le bon avocat pour vos affaires?</a></p>
           <div className="underline"></div>
           <p className="quest2"><a className="quest" href="#recherche-avocat">Besoin d’une consultation pour vos affaires?</a></p>
@@ -199,6 +278,15 @@ function Home() {
           <p className="quest3"><a className="quest" href="/service"  >Avez-vous un problème avec votre entreprise?</a></p>
           <div className="underline"></div>
           <p className="quest4" ><a className="quest" href="/service"  >Avez-vous un problème général?</a></p>
+=======
+          <p className="quest"><a className="quest" href="/team">Comment choisir le bon avocat pour vos affaires?</a></p>
+          <div className="underline"></div>
+          <p className="quest"><a className="quest" href="#recherche-avocat">Besoin d’une consultation pour vos affaires?</a></p>
+          <div className="underline"></div>
+          <p className="quest"><a className="quest" href="/service"  >Avez-vous un problème avec votre entreprise?</a></p>
+          <div className="underline"></div>
+          <p className="quest" ><a className="quest" href="/service"  >Avez-vous un problème général?</a></p>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
           <div className="underline"></div>
         </div>
       </div>
@@ -279,6 +367,7 @@ function Home() {
       </div>
       <div className="aftertenans" id="recherche-avocat">
         <div className="recherche">
+<<<<<<< HEAD
           
           <div className="underlinerecherche"></div>
           <div className="recherchebody">
@@ -291,6 +380,35 @@ function Home() {
 
           </div>
 
+=======
+          <p className="titlerecherche">Vous cherchez un avocat?</p>
+          <div className="underlinerecherche"></div>
+          <div className="recherchebody">
+            <p className="rechbody">Type d'avocat</p>
+            <p className="rechbody">Localisation</p>
+            <p className="rechbody">Date</p>
+          </div>
+          <div className="recherchebodyy">
+            <select id="select-count1">
+              <option value="Business lawyer">Avocat d'affaires</option>
+              <option value="Public lawyer">Avocat public</option>
+              <option value="Private lawyer">Aocat privé</option>
+            </select>
+            <select id="select-count2">
+              <option value="Rwanda">Rwanda</option>
+              <option value="France">France</option>
+              <option value="Cameroon">Cameroon</option>
+            </select>
+            <select id="select-count3">
+              <option value="01/03/2024">01/03/2024</option>
+              <option value="10/04/2024">10/04/2024</option>
+              <option value="05/05/2024">05/05/2024</option>
+            </select>
+            <Link to="#">
+              <button className="bttrouver">Chercher </button>
+            </Link>
+          </div>
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
         </div>
       </div><br/><br/>
 

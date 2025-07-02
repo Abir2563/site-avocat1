@@ -1,13 +1,19 @@
 {
   "name": "siteavocat-dev",
   "version": "1.0.0",
+<<<<<<< HEAD
   "homepage": "https://www.njifenlawfirm.com",
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+<<<<<<< HEAD
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build --git git",
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,6 +28,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/material": "^6.4.8",
+<<<<<<< HEAD
     "@tailwindcss/cli": "^4.1.8",
     "axios": "^1.8.4",
     "bootstrap": "^5.3.6",
@@ -30,6 +37,11 @@
     "express": "^5.1.0",
     "leaflet": "^1.9.4",
     "mongoose": "^8.16.0",
+=======
+    "axios": "^1.8.4",
+    "emailjs-com": "^3.2.0",
+    "leaflet": "^1.9.4",
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
     "react": "^19.0.0",
     "react-datepicker": "^8.2.1",
     "react-dom": "^19.0.0",
@@ -50,8 +62,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
+=======
+>>>>>>> 0ff422489e84264e0718e54143f3f978f7f0e119
   }
 }
