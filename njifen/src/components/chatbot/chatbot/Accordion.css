@@ -1,0 +1,33 @@
+.accordion {
+    border: 1px solid linear-gradient(180deg, #0F1012 25%, #605942 100%, #BDAC78 100%);
+    border-radius: 5px;
+    margin: 20px 200px;
+    width: 10vw;
+    color: rgb(240, 235, 227);
+    padding: 10px;
+    background: linear-gradient(180deg, #0F1012 25%, #605942 100%, #BDAC78 100%);
+  }
+  
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    margin-top: 5px;
+  }
+  
+  .arrow {
+    font-size: 1.2em;
+    
+  }
+  
+  .arrow.right::before {
+    content: '\25B6'; /* Black right-pointing triangle */
+  }
+  
+  .arrow.down::before {
+    content: '\25BC'; /* Black down-pointing triangle */
+  }
+  

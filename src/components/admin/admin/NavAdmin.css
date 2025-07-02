@@ -1,0 +1,96 @@
+/* NavAdmin.css */
+
+/* Styles pour le conteneur principal de la navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #010101;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Style pour le logo de la marque */
+  .nav__brand {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  /* Styles pour le menu de navigation */
+  .nav__menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s;
+  }
+  
+  /* Styles pour les éléments du menu */
+  .nav__item {
+    padding:10px 20px;
+  }
+  
+  /* Styles pour les liens dans les éléments du menu */
+  .nav__item a {
+    text-decoration: none;
+    color: #9e9ea4;
+    transition: color 0.3s;
+  }
+  
+  /* Effet de survol pour les éléments du menu */
+  .nav__item a:hover,
+  .nav__item .active {
+    color: #ffffff;
+  }
+  
+  /* Styles pour les icônes dans les éléments du menu */
+  .icon {
+    margin-right: 20px;
+  }
+  
+  /* Styles pour le menu déroulant */
+  .nav__toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .nav__toggler .line1,
+  .nav__toggler .line2,
+  .nav__toggler .line3 {
+    height: 3px;
+    width: 20px;
+    background-color: #ffffff;
+    margin: 3px 0;
+  }
+  
+  /* Effet de basculement pour le menu */
+  .nav__active {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #010101;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  /* Styles pour les petits écrans (responsive) */
+  @media (max-width: 768px) {
+    .nav__menu {
+      display: none;
+    }
+  
+    .nav__toggler {
+      display: flex;
+    }
+  
+    .nav__menu.nav__active {
+      display: flex;
+    }
+  }
+  

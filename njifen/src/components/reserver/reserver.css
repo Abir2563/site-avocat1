@@ -1,0 +1,113 @@
+/* CSS for Appointment Form */
+.form-container {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 40px;
+  /* border: 0.1px solid #000000;  */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff ; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */;
+  }
+  body {
+    background-color: rgb(255, 255, 255) !important; /* Set the background color of the page to beige */
+  }
+  .fofo {
+    width: 370px;
+    padding: 15px;
+    margin: 0 auto; /* Center the element horizontally */
+    margin-top: 5px;
+    margin-bottom: 15px;  /* Adjust margin as needed */
+    font-size: 14px;
+    background-color: #5b2dff;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  
+.form-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color:#693a16;
+}
+
+.form-line div {
+  flex: 1 1 calc(33.33% - 10px);
+}
+ .ko{
+  color: #693a16 ;
+  font-size: 25px;
+  font-family: "Marcellus";
+  font-weight: 520;
+  letter-spacing: 6px;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 10px;
+ }
+.form-line label {
+  display: block;
+  margin-bottom: 5px;
+ 
+  font-family: "Open Sans";
+}
+.form-line p{
+  color: #000000;
+}
+
+ 
+.form-line select,
+.form-line input[type="text"],
+.form-line input[type="email"],
+.form-line input[name="timeToReach"],
+.form-line input[name="time"],
+.form-line textarea {
+  width: calc(90% - 9px);
+  padding: 8px;
+  border: 1px solid #000000; /* Set the border color to white */
+  border-radius: 4px;
+  margin-right: 10px;
+  font-family: "Marceluus";
+  color: #000000; /* Set text color to white */
+  background-color: transparent; /* Make the background transparent */
+
+}
+
+/* Additional CSS to handle placeholder text */
+.form-line select::placeholder,
+.form-line input[type="text"]::placeholder,
+.form-line input[type="email"]::placeholder,
+.form-line textarea::placeholder {
+  color: #000000; /* Set placeholder text color to white */
+}
+
+
+
+.m7{
+   color: #000000;
+  font-family: "open sans";
+  text-align: center;
+  padding-top: 10px;
+}
+.felsa {
+  width: 200px;
+  height: 30px;
+  border: 2px solid #693a16;
+  color: #693a16;
+  font-family: "Open Sans";
+  font-size: 1em; 
+  font-style: normal;
+  background-color: transparent;
+  border-radius: 1%;
+  display: block;
+  margin: auto; /* This will center the button horizontally */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+
+.felsa:hover {
+  background: #693a16;
+  color: #ffffff;
+  font-weight:normal;}

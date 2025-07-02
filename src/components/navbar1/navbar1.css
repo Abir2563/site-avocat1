@@ -1,0 +1,165 @@
+.Navbar{
+    width: 99vw; /* 80% of viewport width */
+    height: 11vh; /* 10% of viewport height */
+    background-color: #101010;
+    display: flex;
+    flex-direction: row; /* Change to row for horizontal layout */
+    justify-content: space-between;
+    align-items:center;
+    
+  }
+  .logo1{
+  height: 10vh;
+  width: 8vw;
+  margin-left: 5vw;
+  margin-top: 1vw;
+}
+  .linknav {
+    color: #f5f5ef;
+    font-family: "Open Sans";
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 1vw;
+    line-height: 4;
+  }
+  .fr-en{
+    border: 2px solid #e6bc89;
+    background-color: transparent;
+    color:#E6BC89;
+    height: 3.2vh;
+    width: 2.5vw;
+    margin-right: 1vw;
+  }
+
+  .profil {
+    height: 35px;
+    margin-right: 1vh;
+    margin-bottom: -1.5vh;
+  }
+  
+  
+  .actionButton {
+    width: 150px;
+    height: 30px;
+    border: 2px solid #e6bc89;
+    padding: 0 10px;
+    margin: 15px;
+    margin: 5.6vh;
+    color: #e6bc89;
+    font-family: "Open Sans";
+    font-size: 1em; 
+    font-style: normal;
+    line-height: normal;
+    background-color: transparent;
+    border-radius: 1%;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+  }
+
+   
+  .dbu {
+    width: 120px;
+    height: 30px;
+    border: 2px solid #e6bc89;
+    padding: 0 10px;
+    margin: 15px;
+    margin: 5.6vh;
+    color: #e6bc89;
+    font-family: "Open Sans";
+    font-size: 12px; 
+    font-style: normal;
+    line-height: normal;
+    background-color: transparent;
+    border-radius: 1%;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+  }
+   .logo {
+
+      background: linear-gradient(
+        180deg,
+        #76453b 5.9%,
+        #e5bb89 88.4%,
+        #ffda92 95.5%
+      );
+      -ms-background-clip: text; 
+      background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      font-family: "Sree Krushnadevaraya";
+      font-size: 2.3em;
+      margin-left: 3vw;
+    }
+  
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+  li {
+    padding: 0.5em 1em; 
+    margin: 0;
+    
+  }
+
+  .linknav {
+    color: #f5f5ef;
+    font-family: "Open Sans";
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 4;
+    padding-right: 10px;
+  }
+  
+.actionButton:hover { 
+  background: #E6BC89;
+  color: rgba(15, 15, 15, 0.77);
+  font-weight:normal;
+  
+}
+
+a:hover{
+  color: #E6BC89;
+}
+/*******Affichage Responsive***************/
+/* Cacher le bouton menu sur desktop */
+/* 📱 Mobile : changer la taille ou l'effet */
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 88% !important; /* ⬅️ tbadlet men 100% */
+    background-color: rgb(8, 8, 8);
+    z-index: 1000;
+    padding: 1rem;
+  }
+
+  .navigation.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .Navbar {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+  

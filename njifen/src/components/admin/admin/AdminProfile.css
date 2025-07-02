@@ -1,0 +1,53 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Pour centrer verticalement */
+    background-color: #f0f0f0; /* Couleur de fond neutre */
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #333; /* Couleur de texte foncée */
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #666; /* Couleur de texte neutre */
+  }
+  
+  .logout-button {
+    padding: 10px 20px; /* Espace autour du texte */
+    background-color: #d9534f; /* Couleur de fond rouge pour la déconnexion */
+    color: white; /* Texte en blanc */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Changement de curseur */
+    transition: background-color 0.3s; /* Effet de transition */
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c; /* Couleur plus sombre au survol */
+  }
+  
+  .auth-buttons {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    gap: 15px; /* Espace entre les boutons */
+  }
+  
+  .auth-buttons button {
+    padding: 10px 20px; /* Espace autour du texte */
+    background-color: #0275d8; /* Couleur de fond bleue */
+    color: white; /* Texte en blanc */
+    border: none;
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer; /* Changement de curseur */
+    transition: background-color 0.3s; /* Effet de transition */
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #025aa5; /* Couleur plus sombre au survol */
+  }
+  
