@@ -1,5 +1,4 @@
 {
-  "ignoreCommand": "echo Ignoring server folder",
   "buildCommand": "npm run build",
   "outputDirectory": "build",
   "cleanUrls": true
