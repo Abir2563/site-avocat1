@@ -111,3 +111,16 @@
   background: #693a16;
   color: #ffffff;
   font-weight:normal;}
+/* Responsive pour mobiles */
+@media (max-width: 768px) {
+  .form-line {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* Responsive pour mobiles-----Bouton Réserver------- */
+@media (max-width: 768px) {
+  .felsa {
+    width: 30vw;
+  }
+}

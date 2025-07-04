@@ -285,7 +285,7 @@ function Home() {
             <p className="rechbody">Vous cherchez un avocat?</p>
             <div className="recherchebodyy">
                 <Link to="/reserver">
-                  <button className="bttrouver">Réserver un rendez-vous</button>
+                  <button className="bttrouver" id="ee">Réserver un rendez-vous</button>
                 </Link>
             </div>
 

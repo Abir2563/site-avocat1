@@ -124,3 +124,12 @@
 h1{
   color: #000;
 }
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .waa {
+    width: 30vw;  
+    height:20vh;      /* taille réduite sur mobile */
+    margin-left: 1vw;      /* centrer l'image */
+    display: block;
+  }
+}

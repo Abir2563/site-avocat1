@@ -1137,21 +1137,11 @@
   }
 }
 @media (max-width: 768px) {
-  #select-count1{
-    
-    margin-left:5px;
+  #ee {
+    margin-top:5vh;
+    margin-left: 20px;
+    font-size: 20px;  
+    text-align: center; 
+    width:80vw; 
   }
 }
-@media (max-width: 768px) {
-  #select-count2{
-    
-    margin-right:3px;
-  }
-}
-@media (max-width: 768px) {
-  #select-count3 {
-    margin-top: 11px;
-    margin-left:5px;
-  }
-}
-
