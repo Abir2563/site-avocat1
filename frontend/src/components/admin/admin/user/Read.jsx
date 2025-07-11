@@ -24,7 +24,7 @@ function Read() {
                     'Authorization': `Bearer ${token}`
                 }
             };
-        axios.get(`http://localhost:8080/api/admin/${id}`, config)
+        axios.get(`https://avocat-backend.onrender.com/api/admin/${id}`, config)
              .then(res => { 
                 console.log("waaaa",res);
                 setData(res.data.user); 
@@ -38,18 +38,19 @@ function Read() {
             <NavAdmin />
             <div className="d-flex w-100 vh-100 justify-content-center align-items-center bg-light">
                 <div className="w-50 border bg-white shadow px-5 pt-3 pb-5 rounded">
-                    <h3>Détail de l'utilisateur</h3>
+                    <h3>Détails de client</h3>
                     <div className="mb-2">
-                        <strong>Nom: {data.name}</strong>
+                        <strong>Nom & Prénom: <span style={{ color: '#808080' }}>{data.name}</span></strong>
                     </div>
                     <div className="mb-2">
-                        <strong>Email: {data.email}</strong>
+                        <strong>Email: <span style={{ color: '#808080' }}>{data.email}</span></strong>
                     </div>
                     <div className="mb-2">
-                        <strong>Rôle: {data.role}</strong>
+                        <strong>Rôle: <span style={{ color: '#808080' }}>{data.role}</span></strong>
                     </div>
                     {/* <Link to="/update" className="btn btn-success">Mettre à jour</Link> */}
-                    <Link to="/appuser" className="btn btn-primary ms-3">Back</Link>
+                    <br/>
+                    <Link to="/appuser" className="btn btn-primary ms-3">Retour</Link>
                 </div>
             </div>
         </div>

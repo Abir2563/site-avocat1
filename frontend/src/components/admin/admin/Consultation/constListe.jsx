@@ -21,7 +21,7 @@ const ConsultationListe = () => {
                         Authorization: `Bearer ${token}`,
                     },
                 };
-                const response = await axios.get('http://localhost:8080/api/consult', config); // Fetch consultations endpoint
+                const response = await axios.get('https://avocat-backend.onrender.com/api/consult', config); // Fetch consultations endpoint
                 setConsultations(response.data);
             } catch (err) {
                 console.error("Error fetching consultations:", err);
@@ -44,7 +44,7 @@ const ConsultationListe = () => {
                     Authorization: `Bearer ${token}`,
                 },
             };
-            axios.delete(`http://localhost:8080/api/consult/${id}`, config) // Delete consultation endpoint
+            axios.delete(`https://avocat-backend.onrender.com/api/consult/${id}`, config) // Delete consultation endpoint
                 .then(res => {
                     console.log("Consultation deleted:", res);
                     setConsultations(consultations.filter(consultation => consultation._id !== id));

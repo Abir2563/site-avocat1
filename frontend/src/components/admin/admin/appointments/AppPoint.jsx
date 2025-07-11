@@ -31,7 +31,7 @@ function AppPoint() {
 
         const fetchAppointments = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/api/appointment/', config);
+                const response = await axios.get('https://avocat-backend.onrender.com/api/appointment/', config);
                 setAppointments(response.data);
             } catch (err) {
                 setError("Erreur lors de la récupération des rendez-vous: " + err.message);
@@ -55,7 +55,7 @@ function AppPoint() {
             };
 
             axios
-                .delete(`http://localhost:8080/api/appointment/${id}`, config)
+                .delete(`https://avocat-backend.onrender.com/api/appointment/${id}`, config)
                 .then(() => {
                     setAppointments((prevAppointments) => prevAppointments.filter((appointment) => appointment._id !== id));
                 })
@@ -77,31 +77,27 @@ function AppPoint() {
     return (
         <div>
             <NavAdmin />
-            <div className="user-bk">
-                <h1>Appointment List</h1>
-                <div className="user-table">
+            <div className="user-bk" >
+                <h1>Liste des Rendez-vous</h1>
+                <div className="user-table" id="ttable" >
                     {appointments.length === 0 ? (
-                        <p>No Appointment Found</p>
+                        <p>Aucun rendez-vous.</p>
                     ) : (
-                        <table className="table-u">
+                    <div className="table-wrapper">
+                        <table className="table-u"  >
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Full Name</th>
+                                    <th>Client</th>
                                     <th>Email</th>
-                                    <th>Contact Number</th>
-                                    <th>Proposed Service</th>
-                                    <th>Chosen Service</th>
-                                    <th>Category</th>
-                                    <th>About</th>
-                                    <th>Documents</th>
+                                    <th>Télèphone</th>
+                                    
                                     <th>Date</th>
-                                    <th>Time</th>
-                                    <th>Location</th>
-                                    <th>Arrival Time</th>
+                                    <th>Heure</th>
+                                    <th>Localisation</th>
+                                    
                                     <th>Consultation</th>
-                                    <th>Status</th>
-                                    <th>Status Message</th>
+                                    <th>Etat</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -112,34 +108,34 @@ function AppPoint() {
                                         <td>{appointment.fullName}</td>
                                         <td>{appointment.email}</td>
                                         <td>{appointment.contactNumber}</td>
-                                        <td>{appointment.serviceOffered}</td>
-                                        <td>{appointment.chosenService}</td>
-                                        <td>{appointment.appointmentCategory}</td>
-                                        <td>{appointment.aboutAppointment}</td>
-                                        <td>{appointment.documents}</td>
+                                        
                                         <td>{new Date(appointment.appointmentDetails.date).toLocaleDateString()}</td>
                                         <td>{appointment.appointmentDetails.time}</td>
                                         <td>{appointment.appointmentDetails.location}</td>
-                                        <td>{appointment.appointmentDetails.timeToReach}</td>
+                                        
                                         <td>{appointment.consultation}</td>
                                         <td>{appointment.status}</td>
-                                        <td>{appointment.statusMessage}</td>
+                                        
                                         <td className="option-l-m-s">
                                             <Link to={`/reada/${appointment._id}`}>
-                                                <button className="btn-lire">Read</button>
+                                                <button className="btn-lire">Afficher</button>
                                             </Link>
-                                            <Link to={`/updatea/${appointment._id}`}>
-                                                <button className="btn-modifier">Edit</button>
-                                            </Link>
+                                                {appointment.status !== "Confirmé" && (
+                                                    <Link to={`/updatea/${appointment._id}`}>
+                                                    <button className="btn-modifier">Modifier</button>
+                                                    </Link>
+                                                )}
                                             <button onClick={() => handleDelete(appointment._id)} className="btn-supprimer">
-                                                Delete
+                                                Supprimer
                                             </button>
                                         </td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
+                    </div>
                     )}
+                    
                 </div>
             </div>
         </div>

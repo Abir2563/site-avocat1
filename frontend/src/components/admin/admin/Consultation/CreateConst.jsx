@@ -13,7 +13,7 @@ const CreateConsultation = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:8000/api/consultation/add', values)
+        axios.post('https://avocat-backend.onrender.com/api/consult/add', values)
             .then((res) => {
                 console.log(res);
                 navigate('/consultations'); // Redirect to the list of consultations

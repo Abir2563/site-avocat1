@@ -3,6 +3,7 @@ import './AppAdmin.css';
 // import Header from './Header';
 // import Sidebar from './Sidebar';
 import Home from './Home';
+import AdminProfile from './AdminProfile';
 import Navadmin from './Navadmin';
 
 const AppAdmin = () => {
@@ -17,7 +18,7 @@ const AppAdmin = () => {
       <div>
         <Navadmin />
       </div>
-      <Home />
+      <AdminProfile />
     
     </div>
   );

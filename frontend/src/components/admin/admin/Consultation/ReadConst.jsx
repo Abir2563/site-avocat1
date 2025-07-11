@@ -8,7 +8,7 @@ const ReadConsultation = () => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8080/api/consultation/${id}`) // URL to fetch consultation details
+            .get(`https://avocat-backend.onrender.com/api/consult/${id}`) // URL to fetch consultation details
             .then((res) => setConsultation(res.data)) // Update state with received data
             .catch((err) => console.error("Error fetching consultation:", err));
     }, [id]); // This effect hook runs when there's a change in ID

@@ -3,6 +3,7 @@ import PrivateRoute from "./components/PrivateRoute"; // adapte le chemin si bes
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import TestAPI from "./TestAPI";
+import CalendarView from './components/CalendarView';
 import Login from "./components/login/login";
 import Signup from "./components/signup/signup";
 import Footer from "./components/footer/footer";
@@ -11,6 +12,7 @@ import Newsletter from "./components/newsletter/newsletter"; // la nouvelle page
 //Début Route Client
 import Homeclient from "./components/EspaceClient/home";
 //Fin Route Client
+import ChatInterface from "./components/chat/chat";
 import Team from "./components/team/team";
 import Team1 from "./components/team/team1";
 import Team2 from "./components/team/team2";
@@ -23,20 +25,23 @@ import Reset from "./components/reset/reset";
 import Reserver from "./components/reserver/reserver";
 import Media from "./components/media/media";
 import Service from "./components/service/service";
+//Admin
 import AppAdmin from "./components/admin/admin/AppAdmin";
 import AppPoint from "./components/admin/admin/appointments/AppPoint";
+import AdminProfile from "./components/admin/admin/AdminProfile";
 import ReadAppointment from "./components/admin/admin/appointments/ReadPoint";
 import UpdateAppointmentStatus from "./components/admin/admin/appointments/UpdatePointt";
 import AppUser from "./components/admin/admin/user/AppUser";
+import Create from "./components/admin/admin/user/Create";
+import Read from "./components/admin/admin/user/Read";
+import ConsultationListe from "./components/admin/admin/Consultation/constListe";
+import CreateConsultation from "./components/admin/admin/Consultation/CreateConst"
+//User
 import EditProfile from "./components/profil/editprofil";
 import UserProfileView from "./components/profil/seeProfil";
 import AppointmentDetails from "./components/profil/appoint";
 import EditAppointment from "./components/profil/editappoint";
 import Profile from "./components/profil/profile";
-import ChatInterface from "./components/chat/chat";
-import Create from "./components/admin/admin/user/Create";
-import Read from "./components/admin/admin/user/Read";
-import ConsultationListe from "./components/admin/admin/Consultation/constListe";
 import ReminderPage from "./components/profil/reminder";
 import Modal from "./components/buttonchat/Modal";
 import ChatbotAvoca from "./components/chatbot/chatbot/ChatbotAvoca";
@@ -168,15 +173,26 @@ function App() {
           {/* Admin Routes */}
           {userRole === "admin" && (
             <>
-              <Route path="/appadmin" element={isAuthenticated() ? (<AppAdmin />) : (
-                    <Navigate to="/login" />)} />
+
               <Route path="/consultation" element={<ConsultationListe />} />
-              <Route path="/appadmin" element={<AppAdmin />} />
+              <Route path="/CreateConst" element={<CreateConsultation />} />
+              <Route path="/AdminProfile" element={<AdminProfile />} />
               <Route path="/AppPoint" element={<AppPoint />} />
               <Route path="/appuser" element={<AppUser />} />
               <Route path="/create" element={<Create />} />
               <Route path="/users/:id" element={<Read />} />
               <Route path="/users/:id" element={<Read />} />
+              <Route path="/calendrier" element={<CalendarView />} />
+
+              <Route
+                path="/editprofile"
+                element={
+                  isAuthenticated() ? <EditProfile /> : <Navigate to="/login" />
+                }
+              />
+              <Route path="/appadmin" element={isAuthenticated() ? (<AppAdmin />) : (
+                    <Navigate to="/login" />)} 
+              />
               <Route
                 path="/updatea/:id"
                 element={<UpdateAppointmentStatus />}

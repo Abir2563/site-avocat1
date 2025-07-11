@@ -93,4 +93,44 @@
       display: flex;
     }
   }
-  
+  /* Burger en bas à droite fixe */
+/* Structure principale */
+
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+
+  .nav__toggler {
+    display: flex;
+  }
+
+  .nav__menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 80%;
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  .nav__menu.nav__active {
+    display: flex;
+  }
+
+  .nav__item a,
+  .logout-button {
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .nav{
+    width:89vw;
+  }
+}

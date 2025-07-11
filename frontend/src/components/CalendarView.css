@@ -1,0 +1,71 @@
+.calendrier-titre {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.calendrier-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.calendrier-wrapper {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.calendrier-wrapper:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.calendrier-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .calendrier-wrapper {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .calendrier-title {
+    font-size: 20px;
+  }
+}
+/* Forcer l'affichage horizontal de la barre d'outils */
+.fc-header-toolbar {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Espacement entre les boutons */
+.fc .fc-button {
+  margin: 0 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+/* Espacer les groupes de boutons */
+.fc .fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+}
+.fc-event-title {
+  white-space: normal !important;
+  word-break: break-word;
+}
+.fc-event {
+  cursor: pointer;
+}
+

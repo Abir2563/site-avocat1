@@ -11,7 +11,7 @@ function UpdateAppointmentStatus() {
     const token = localStorage.getItem('token'); // Get token from local storage
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/api/appointment/${id}`, { // Send token with GET request
+        axios.get(`https://avocat-backend.onrender.com/api/appointment/${id}`, { // Send token with GET request
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -26,7 +26,7 @@ function UpdateAppointmentStatus() {
     }, [id, token]);
 
     const handleConfirm = () => {
-        axios.put(`http://localhost:8080/api/appointment/confirm/${id}`, null, { // Send token with PUT request
+        axios.put(`https://avocat-backend.onrender.com/api/appointment/confirm/${id}`, null, { // Send token with PUT request
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -42,7 +42,7 @@ function UpdateAppointmentStatus() {
     };
 
     const handleDeny = () => {
-        axios.put(`http://localhost:8080/api/appointment/deny/${id}`, null, { // Send token with PUT request
+        axios.put(`https://avocat-backend.onrender.com/api/appointment/deny/${id}`, null, { // Send token with PUT request
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -51,10 +51,13 @@ function UpdateAppointmentStatus() {
                 console.log(res);
                 navigate('/AppPoint');
             })
-            .catch(err => {
-                console.error(err);
-                setError(err.response.data.message || "An error occurred");
-            });
+        .catch(err => {
+        console.error("Erreur :", err);
+        setError(err.response?.data?.message || "Erreur inconnue");
+        });
+
+
+
     };
 
     return (
@@ -62,15 +65,15 @@ function UpdateAppointmentStatus() {
              <Navadmin />
         <div className='container'>
             <div className='moraba3'>
-                <h1 className='title'>Update Appointment Status</h1>
+                <h1 className='title'>Modifier l'état de Rendez vous</h1>
                 {error && <div className="error">{error}</div>}
                 <div>
-                    <h3>Status: {status}</h3>
+                    <h3>Etat:<span style={{ color: '#808080' }}> {status}</span></h3>
                 </div>
                 <div className='button-group'>
-                    <button onClick={handleConfirm} className='btn btn-success button'>Confirm</button>
-                    <button onClick={handleDeny} className='btn btn-danger button'>Deny</button>
-                    <Link to='/AppPoint' className='btn btn-primary button'>Back</Link>
+                    <button onClick={handleConfirm} className='btn btn-success button'>Confirmer</button>
+                    <button onClick={handleDeny} className='btn btn-danger button'>Annuler</button>
+                    <Link to='/AppPoint' className='btn btn-primary button'>Retour</Link>
                 </div>
             </div>
         </div>

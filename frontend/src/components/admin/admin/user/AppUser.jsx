@@ -25,7 +25,7 @@ function AppUser() {
             },
         };
     
-        axios.get('http://localhost:8080/api/admin/', config)
+        axios.get('https://avocat-backend.onrender.com/api/admin/', config)
         .then(res => {
             // Check if res.data.users is an array
             if (Array.isArray(res.data.users)) {
@@ -49,7 +49,7 @@ function AppUser() {
                 },
             };
 
-            axios.delete(`http://localhost:8080/api/admin/${id}`, config)
+            axios.delete(`https://avocat-backend.onrender.com/api/admin/${id}`, config)
                 .then(() => {
                     // Refresh the list of users after deletion
                     setUsers(users.filter(user => user._id !== id));
@@ -64,44 +64,46 @@ function AppUser() {
         <Navadmin />
         </div>
         <div className='user-bk'>
-            <h1 >Users List</h1>
+            <h1 > Liste des clients</h1>
             <div className='user-table'>
-                <div className='d-flex justify-content-end'>
+                {/*<div className='d-flex justify-content-end'>
                     <Link to="/create" className='btn btn-success'>Ajouter+</Link>
-                </div>
+                </div>*/}
+            <div className="table-wrapper">
                 <table className='table-u '>
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>FirstName</th>
-                            <th>LastName</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
                             <th>Email</th>
-                            <th>Role</th>
+                            <th>Rôle</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-    {users.map((user) => (
-        <tr key={user._id} >
-            <td>{user._id}</td>
-            <td>{user.firstName}</td>
-            <td>{user.lastName}</td>
-            <td>{user.email}</td>
-            <td>{user.role}</td>
-            <td>
+                        {users.map((user) => (
+                            <tr key={user._id} >
+                                <td>{user._id}</td>
+                                <td>{user.firstName}</td>
+                                <td>{user.lastName}</td>
+                                <td>{user.email}</td>
+                                <td>{user.role}</td>
+                                <td>
           
-                <div className='option-l-m-s'>
-                <Link to={`/users/${user._id}`}>
-                    <button className='btn-lire'>Read</button>
-                </Link>
-                <button onClick={() => handleDelete(user._id)} className='btn-supprimer'>Delete</button>
-                </div>
-            </td>
-        </tr>
-    ))}
-</tbody>
+                        <div className='option-l-m-s'>
+                        <Link to={`/users/${user._id}`}>
+                            <button className='btn-lire'>Afficher</button>
+                        </Link>
+                        <button onClick={() => handleDelete(user._id)} className='btn-supprimer'>Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+            ))}
+        </tbody>
 
                 </table>
+                </div>
             </div>
         </div>
         </div>

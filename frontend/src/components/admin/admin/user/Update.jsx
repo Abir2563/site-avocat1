@@ -11,7 +11,7 @@ function Update() {
     });
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/users/${id}`)
+        axios.get(`https://avocat-backend.onrender.com/users/${id}`)
             .then(res => {
                 setValues({
                     name: res.data.name,
@@ -23,7 +23,7 @@ function Update() {
 
     const handleUpdate = (event) => {
         event.preventDefault();
-        axios.put(`http://localhost:3000/users/${id}`, values)
+        axios.put(`https://avocat-backend.onrender.com/users/${id}`, values)
             .then(res => {
                 console.log(res);
                 navigate('/');

@@ -65,11 +65,14 @@ body {
 
 .mb-2 {
     margin-bottom: .5rem;
+    text-align:center;
 }
 
 h3 {
     margin-bottom: 1.5rem;
-    color: #343a40;
+    color: #000000;
+    font-size: 1.5rem;
+    text-align:center;
 }
 
 strong {
@@ -83,7 +86,8 @@ strong {
     border-color: #007bff;
     color: #fff;
     text-decoration: none;
-    padding: .5rem 1rem;
+    
+    padding: .5rem 3rem;
     border-radius: .25rem;
     transition: background-color .2s;
 }
@@ -94,5 +98,6 @@ strong {
 }
 
 .ms-3 {
-    margin-left: 1rem;
+    
+    margin-left: 15rem; 
 }

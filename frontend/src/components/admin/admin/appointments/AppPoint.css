@@ -48,3 +48,51 @@
     height: auto;
     object-fit: contain; /* Pour que l'image garde ses proportions */
 }
+#ttable{
+width:90vw;
+}
+/*Affichage mobile*/
+/* Design desktop normal */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .table-u {
+    min-width: 800px; /* Force une largeur pour activer le scroll horizontal */
+  }
+
+  .user-bk {
+    padding: 1rem;
+  }
+
+  .user-table {
+    margin-top: 1rem;
+  }
+}
+/* Optionnel : plus petit en mobile */
+@media (max-width: 768px) {
+  .user-bk h1 {
+    font-size: 5vw;
+    text-align: left;
+    margin-left:-7vw;
+  }
+}
+@media (max-width: 768px) {
+  .user-bk  {
+    height:50vh;
+    width:89vw;
+  }
+}
+@media (max-width: 768px) {
+  #ttable  {
+    
+    width:89vw;
+  }
+}

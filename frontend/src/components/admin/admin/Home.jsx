@@ -24,9 +24,28 @@ function Home() {
 
   // Récupération du nombre de produits
   useEffect(() => {
+    fetch("https://avocat-backend.onrender.com/api/appointment/count", {
+  method: "GET",
+  headers: {
+    Authorization: "Bearer ton_token_jwt_ici",
+  },
+})
+  .then((res) => {
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    return res.json();
+  })
+  .then((data) => {
+    console.log("Nombre de rendez-vous :", data.count);
+  })
+  .catch((error) => {
+    console.error("Erreur lors de la requête :", error);
+  });
+
     const fetchProductCount = async () => {
       try {
-        const response = await axios.get('https://avocat-backend.onrender.com/api/appointments/');
+        const response = await axios.get('https://avocat-backend.onrender.com/api/appointment/count');
         setProductCount(response.data.count);
       } catch (err) {
         console.error('Erreur lors de la récupération du nombre de produits:', err);
@@ -40,7 +59,7 @@ function Home() {
   useEffect(() => {
     const fetchOrderCount = async () => {
       try {
-        const response = await axios.get('https://avocat-backend.onrender.com/auth/commandes/count');
+        const response = await axios.get('https://avocat-backend.onrender.com/auth/consult/count');
         setOrderCount(response.data.count);
       } catch (err) {
         console.error('Erreur lors de la récupération du nombre de commandes:', err);
@@ -54,7 +73,7 @@ function Home() {
   useEffect(() => {
     const fetchClientCount = async () => {
       try {
-        const response = await axios.get('https://avocat-backend.onrender.com/auth/client/count');
+        const response = await axios.get('https://avocat-backend.onrender.com/auth/clients/count');
         setClientCount(response.data.count); // Assurez-vous que la réponse renvoie "count"
       } catch (err) {
         console.error('Erreur lors de la récupération du nombre de clients:', err);
