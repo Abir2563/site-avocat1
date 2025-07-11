@@ -124,12 +124,21 @@
 h1{
   color: #000;
 }
+
 /* Responsive mobile */
 @media (max-width: 768px) {
   .waa {
-    width: 30vw;  
-    height:20vh;      /* taille réduite sur mobile */
-    margin-left: 1vw;      /* centrer l'image */
+    width: 20vw;  
+    height:18vh;      /* taille réduite sur mobile */
+    margin-left: -2vw;      /* centrer l'image */
     display: block;
+  }
+}
+/* Folsaaa */
+@media (max-width: 768px) {
+  .Folssa {
+    
+    width:25vw;   /* taille réduite sur mobile */
+   
   }
 }

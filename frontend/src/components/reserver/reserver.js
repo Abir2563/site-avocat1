@@ -209,9 +209,7 @@ const AppointmentForm = () => {
                   Rédaction et Rélecture des actes juridique
                 </option>
                 <option value="Récouvrement des créances">Récouvrement des créances</option>
-                {/*<option value="Administrative Litigation">
-                  Administrative Litigation
-                </option>*/}
+
               </select>
               {errors.chosenService && <span>{errors.chosenService}</span>}
             </div>
@@ -231,31 +229,6 @@ const AppointmentForm = () => {
                 <option value="Droit des affaires">Droit des affaires</option>
                 <option value="Droit privé général">Droit privé général</option>
                 <option value="Droit public">Droit public</option>
-                {/*<option value="General Commercial Law">
-                  General Commercial Law
-                </option>
-                <option value="Company Law">Company Law</option>
-                <option value="Labor Law and Social Security">
-                  Labor Law and Social Security
-                </option>
-                <option value="Civil Law and Civil Procedure">
-                  Civil Law and Civil Procedure
-                </option>
-                <option value="Contract Law">Contract Law</option>
-                <option value="Public Procurement Law">
-                  Public Procurement Law
-                </option>
-                <option value="Environmental Law">Environmental Law</option>
-                <option value="Public Business Law">Public Business Law</option>
-                <option value="Insurance Law and Litigation">
-                  Insurance Law and Litigation
-                </option>
-                <option value="Transportation Law and Litigation">
-                  Transportation Law and Litigation
-                </option>
-                <option value="Family and Personal Law">
-                  Family and Personal Law
-                </option>*/}
               </select>
               {errors.appointmentCategory && (
                 <span>{errors.appointmentCategory}</span>

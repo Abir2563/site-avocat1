@@ -282,9 +282,9 @@ function Home() {
           
           <div className="underlinerecherche"></div>
           <div className="recherchebody">
-            <p className="rechbody">Vous cherchez un avocat?</p>
+            <p className="rechbody" id="txt">Vous cherchez un avocat?</p>
             <div className="recherchebodyy">
-                <Link to="/reserver">
+                <Link to="/login">
                   <button className="bttrouver" id="ee">Réserver un rendez-vous</button>
                 </Link>
             </div>

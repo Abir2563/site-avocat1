@@ -27,6 +27,8 @@ const UserProfileView = () => {
         config
       );
       setUserData(response.data);
+      console.log("Réponse complète :", response);
+
       setLoading(false); // Data fetched, set loading to false
     } catch (error) {
       console.error("Error fetching user data:", error);
@@ -52,10 +54,10 @@ const UserProfileView = () => {
           {userData.user && (
             <>
               <div>
-                <strong>Nom:</strong> {userData.user.firstName}
+                <strong>Nom:</strong> {userData.user.lastName}
               </div>
               <div>
-                <strong>Prénom:</strong> {userData.user.lastName}
+                <strong>Prénom:</strong> {userData.user.firstName}
               </div>
               <div>
                 <strong>Email:</strong> {userData.user.email}

@@ -1045,6 +1045,7 @@
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
   .aftertenans  {
     margin-top: -300px;    
@@ -1063,13 +1064,7 @@
     height:250px;
   }
 }
-@media (max-width: 768px) {
-  .titlerecherche {
-    margin-left: 15px;
-    font-size: 20px;  
-    text-align: center;  
-  }
-}
+
 
 @media (max-width: 768px) {
   .recherchebody {
@@ -1085,16 +1080,6 @@
     text-align: center;  
   }
 }
-
-@media (max-width: 768px) {
-  .bttrouver {
-    flex-basis: 100%; /* force le bouton à prendre toute la ligne */
-    margin-top: 10px;
-    width: 120px;
-    margin-right:3px;
-  
-  }
-}
 @media (max-width: 768px) {
   #ee {
     margin-top:5vh;
@@ -1104,4 +1089,5 @@
     width:80vw; 
   }
 }
+
 
