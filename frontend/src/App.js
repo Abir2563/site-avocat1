@@ -76,7 +76,7 @@ function App() {
 
     <BrowserRouter>
       <div>
-      <p>Dernière mise à jour : 11 juillet</p>
+      
 
         <Routes>
           <Route
